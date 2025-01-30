@@ -42,15 +42,18 @@
         nav ul {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+            padding: 0;
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 10px;
         }
 
         nav ul li a {
             font-weight: 500;
             color: white;
+            padding: 5px 15px;
         }
 
         /* Header Styles */
@@ -103,6 +106,60 @@
         footer p {
             font-size: 1rem;
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .card h2 {
+                font-size: 1.8rem;
+            }
+
+            .card p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding-left: 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .card h2 {
+                font-size: 1.6rem;
+            }
+
+            .card p {
+                font-size: 0.9rem;
+            }
+
+            nav ul li a {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 
@@ -138,8 +195,6 @@
             <p>I am passionate about combining data science with real-world applications, whether it’s improving customer experience, optimizing business decisions, or driving innovation through automation. I’m always eager to collaborate on exciting projects and contribute my expertise in data analytics and machine learning to make a meaningful impact.</p>
             <br>
             <p>Feel free to connect with me if you'd like to chat about data science, AI, or any interesting tech topic!</p>
-
-
         </section>
     </div>
 

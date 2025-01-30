@@ -42,15 +42,18 @@
         nav ul {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav ul li {
             margin: 0 15px;
+            padding: 5px;
         }
 
         nav ul li a {
             font-weight: 500;
             color: white;
+            text-align: center;
         }
 
         /* Header Styles */
@@ -110,6 +113,60 @@
 
         footer p {
             font-size: 1rem;
+        }
+
+        /* Mobile-friendly Styles */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .card h2 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                font-size: 1rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -240,24 +297,24 @@
         <!-- Project 7: Collaborative Filtering Recommendation System -->
         <section class="section card">
             <h2>Collaborative Filtering Recommendation System</h2>
-            <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, Scikit-learn</p>
+            <p><strong>Technologies Used:</strong> Python, Pandas, Scikit-learn, Surprise</p>
             <p>
-                I built a movie recommendation system using collaborative filtering to suggest movies to users based on their preferences. By applying <strong>TensorFlow</strong> and <strong>Keras</strong>, I developed a deep learning-based model that learns from user-item interactions and improves its predictions over time.
+                This project focused on building a collaborative filtering recommendation system to recommend products to users based on their preferences and the behavior of other users. I used <strong>Surprise</strong>, a Python library, to implement matrix factorization and neighborhood-based collaborative filtering techniques for personalized recommendations.
             </p>
             <p>
-                The system also incorporated <strong>Scikit-learn</strong> for data preprocessing and feature extraction, ensuring the model could handle large-scale datasets. The recommendation system was deployed on a cloud platform to provide scalable recommendations in real-time.
+                The model was evaluated using various metrics such as <strong>RMSE</strong> and <strong>MAE</strong>, ensuring that it provides accurate predictions. The system can be scaled and integrated with e-commerce platforms to enhance user experience and increase sales.
             </p>
             <ul>
-                <li><strong>Libraries/Tools:</strong> TensorFlow, Keras, Scikit-learn, Pandas</li>
-                <li><strong>Techniques:</strong> Collaborative Filtering, Deep Learning, Recommendation Algorithms</li>
-                <li><strong>Challenges:</strong> Data sparsity, handling large-scale user interactions</li>
+                <li><strong>Libraries/Tools:</strong> Surprise, Pandas, Scikit-learn</li>
+                <li><strong>Techniques:</strong> Collaborative Filtering, Recommendation Systems</li>
+                <li><strong>Challenges:</strong> Data sparsity, ensuring model accuracy</li>
             </ul>
         </section>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Shuaib Iqbal. All Rights Reserved.</p>
+        <p>&copy; 2025 Shuaib Iqbal. All rights reserved.</p>
     </footer>
 </body>
 

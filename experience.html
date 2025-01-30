@@ -42,6 +42,7 @@
         nav ul {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav ul li {
@@ -111,6 +112,76 @@
         footer p {
             font-size: 1rem;
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                font-size: 1rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            nav ul li {
+                font-size: 1rem;
+            }
+
+            .card h2 {
+                font-size: 1.2rem;
+            }
+
+            .card p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 
@@ -138,11 +209,6 @@
         <section class="section card">
             <h2>Data Scientist | AiSighit.ai</h2>
             <p><strong>Oct 2022 – Present</strong></p>
-            <!-- <ul>
-                <li>Developed predictive models that improved sales forecasting by 15%.</li>
-                <li>Implemented NLP models to analyze customer sentiment.</li>
-                <li>Optimized data processing workflows, reducing processing time by 30%.</li>
-            </ul> -->
             <p>
                 At AiSighit.ai, my core responsibilities revolve around leveraging data science to drive business value within the FMCG sector.  
                 I forecast sales and quantities using advanced machine learning and deep learning models, generating actionable insights that inform strategic decision-making.  
@@ -157,10 +223,6 @@
         <section class="section card">
             <h2>Associate Machine Learning Engineer | Sense Digital</h2>
             <p><strong>Feb 2022 – Sept 2022</strong></p>
-            <!-- <ul>
-                <li>Created a recommendation engine boosting engagement by 20%.</li>
-                <li>Led teams in building scalable data pipelines.</li>
-            </ul> -->
             <p>
                 At Sense Digital, I contributed to the development and deployment of AI-driven solutions, focusing on extracting actionable insights from diverse data sources.  
                 My responsibilities included gathering and interpreting data, performing preprocessing and exploratory data analysis (EDA) to prepare data for modeling, and 
@@ -173,10 +235,6 @@
         <section class="section card">
             <h2>Machine Learning Engineer-Internship | IVY Interactive Solutions</h2>
             <p><strong>Jan 2020 – April 2022</strong></p>
-            <!-- <ul>
-                <li>Created a recommendation engine boosting engagement by 20%.</li>
-                <li>Led teams in building scalable data pipelines.</li>
-            </ul> -->
             <p>
                 During my Machine Learning Engineer internship at IVY Interactive Solutions, I gained valuable experience working with FMCG data and applying machine 
                 learning techniques to solve real-world business challenges. My responsibilities included understanding and analyzing FMCG data, forecasting sales and 
@@ -186,21 +244,22 @@
             </p>
         </section>
     
-    <section class="section card">
-        <h2>Computer Science Lecturer | Eclat College for Girls</h2>
+        <section class="section card">
+            <h2>Computer Science Lecturer | Eclat College for Girls</h2>
             <p><strong>Nov 2018 – May 2019</strong></p>
-        <p>
-            As a Computer Science Lecturer at Eclat College for Girls, I played a key role in shaping the next generation of computer scientists. My responsibilities 
-            encompassed a range of activities, from curriculum preparation and resource management to student mentorship and assessment.  This included meticulously 
-            setting up laboratory resources, designing and planning practical experiments to reinforce theoretical concepts, and assigning project work that challenged 
-            students to apply their knowledge creatively.  A crucial aspect of my role was ensuring the software used in the labs remained current and functional, requiring 
-            regular updates and troubleshooting.  I also dedicated time to evaluating student progress through grading tests and assignments, providing constructive feedback 
-            to facilitate their learning.  Furthermore, I served as a primary point of contact for students, patiently addressing their questions, clarifying complex topics, 
-            and fostering a deeper understanding of computer science principles.  This involved creating a supportive and encouraging learning environment where students felt
-             comfortable seeking assistance and exploring their interests in the field.
-        </p>
-    </section>
-</div>
+            <p>
+                As a Computer Science Lecturer at Eclat College for Girls, I played a key role in shaping the next generation of computer scientists. My responsibilities 
+                encompassed a range of activities, from curriculum preparation and resource management to student mentorship and assessment.  This included meticulously 
+                setting up laboratory resources, designing and planning practical experiments to reinforce theoretical concepts, and assigning project work that challenged 
+                students to apply their knowledge creatively.  A crucial aspect of my role was ensuring the software used in the labs remained current and functional, requiring 
+                regular updates and troubleshooting.  I also dedicated time to evaluating student progress through grading tests and assignments, providing constructive feedback 
+                to facilitate their learning.  Furthermore, I served as a primary point of contact for students, patiently addressing their questions, clarifying complex topics, 
+                and fostering a deeper understanding of computer science principles.  This involved creating a supportive and encouraging learning environment where students felt
+                comfortable seeking assistance and exploring their interests in the field.
+            </p>
+        </section>
+    </div>
+
     <footer>
         <p>&copy; 2025 Shuaib Iqbal. All rights reserved.</p>
     </footer>

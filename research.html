@@ -42,15 +42,18 @@
         nav ul {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 10px;
         }
 
         nav ul li a {
             font-weight: 500;
             color: white;
+            padding: 10px;
+            display: block;
         }
 
         /* Header Styles */
@@ -103,6 +106,64 @@
         footer p {
             font-size: 1rem;
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            .card h2 {
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .card h2 {
+                font-size: 1.2rem;
+            }
+
+            .card p {
+                font-size: 0.9rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 
@@ -127,11 +188,7 @@
     </header>
 
     <div class="container">
-        <!-- Research Paper 1 -->
-        <!-- Research Paper 6: Optimizing Sales Forecasting with Time-Series Analysis -->
-
-
-        <!-- Research Paper 3 -->
+        <!-- Research Paper 1: Forecasting Stock Market Using Machine Learning Approach Encoder-Decoder ConvLSTM -->
         <section class="section card">
             <h2>Forecasting Stock Market Using Machine Learning Approach Encoder-Decoder ConvLSTM</h2>
             <p>
@@ -168,166 +225,74 @@
             </ul>
         </section>
 
-        <!-- Research Paper 4: Cryptocurrency Market Prediction -->
-        <section class="section card">
-            <h2>Time-Series Prediction of Cryptocurrency Market using Machine Learning Techniques</h2>
-            <p>
-                In the market of cryptocurrency, Bitcoins are the first currency which has gained significant importance. 
-                To predict the market price and stability of Bitcoin in the crypto-market, a machine learning-based time-series 
-                analysis has been applied. Time-series analysis can predict the future ups and downs in the price of Bitcoin. 
-                For this purpose, we have used ARIMA, FBProphet, and XGBoost for time series analysis as machine learning techniques. 
-                The parameters on the basis of which we have evaluated these models are Root Mean Square Error (RMSE), Mean Absolute Error (MAE), and R². 
-                After conducting experiments on these three techniques, ARIMA was considered the best model for forecasting Bitcoin prices in the crypto-market with RMSE score of 322.4 and MAE score of 227.3. 
-                This research can be helpful for investors in the crypto-market.
-            </p>
-            <h3>Technologies Used:</h3>
-            <ul>
-                <li>Machine Learning (ARIMA, FBProphet, XGBoost)</li>
-                <li>Python (scikit-learn, Pandas, NumPy)</li>
-                <li>Time-Series Analysis</li>
-                <li>Cryptocurrency Market Data Analysis</li>
-                <li>Model Evaluation Metrics (RMSE, MAE, R²)</li>
-            </ul>
-            <h3>Skills Developed:</h3>
-            <ul>
-                <li>Cryptocurrency Price Prediction</li>
-                <li>Model Evaluation and Performance Tuning</li>
-                <li>Time-Series Forecasting</li>
-                <li>Data Preprocessing and Analysis</li>
-            </ul>
-            <h3>Major Flaws and Areas of Improvement:</h3>
-            <ul>
-                <li>Models may struggle with high volatility and extreme events in the cryptocurrency market.</li>
-                <li>ARIMA may not capture sudden market shifts caused by external factors such as regulation changes or market manipulation.</li>
-            </ul>
-            <h3>Future Improvements:</h3>
-            <ul>
-                <li>Incorporate deep learning models for better prediction accuracy.</li>
-                <li>Include more granular data such as transaction volume and external sentiment analysis (e.g., news, social media).</li>
-                <li>Experiment with more sophisticated ensemble methods to improve model robustness.</li>
-            </ul>
-        </section>
-
-        <!-- Research Paper 5: Multilevel Feedback Queue Scheduling Algorithm -->
-        <section class="section card">
-            <h2>Multilevel Feedback Queue: Efficient Scheduling and Implementation by Using Dynamic Quantum</h2>
-            <p>
-                A multitasking operating system allows many programs to run at the same time. Efficient CPU scheduling is necessary to handle these services. CPU scheduling algorithms come in various forms, each with advantages and disadvantages. In this project, we implemented a Multi-Level Feedback Queue (MLFQ) algorithm with a static time quantum for the first queue and a dynamic time quantum for the second queue. The Round Robin (RR) algorithm was used in the first queue for processes with short burst times. Processes with longer burst times were moved to the second queue, where we calculated the average burst time of all remaining processes and set that as the quantum for the second queue, applying the Shortest Job First (SJF) algorithm. This technique helped prevent starvation by ensuring that processes with long burst times still received CPU time, with 70% of processes in the second queue successfully getting CPU time. The approach helped maintain fairness and efficiency in multitasking environments.
-            </p>
-            <h3>Technologies Used:</h3>
-            <ul>
-                <li>C Programming</li>
-                <li>Operating Systems Concepts</li>
-                <li>Scheduling Algorithms (Round Robin, Shortest Job First)</li>
-                <li>Dynamic Time Quantum Implementation</li>
-            </ul>
-            <h3>Skills Developed:</h3>
-            <ul>
-                <li>Operating System Concepts</li>
-                <li>CPU Scheduling Algorithms</li>
-                <li>Multitasking Systems</li>
-                <li>Algorithm Optimization and Efficiency</li>
-            </ul>
-            <h3>Major Flaws and Areas of Improvement:</h3>
-            <ul>
-                <li>Static time quantum for the first queue can sometimes lead to inefficient use of CPU time for certain processes.</li>
-                <li>Dynamic time quantum might require additional overhead in calculating and updating burst times in real-time.</li>
-            </ul>
-            <h3>Future Improvements:</h3>
-            <ul>
-                <li>Refine dynamic time quantum calculation to make it more adaptive to varying workload conditions.</li>
-                <li>Experiment with other scheduling algorithms to compare performance and efficiency across different systems.</li>
-                <li>Integrate priority scheduling to give higher priority to important processes while maintaining fairness for lower-priority tasks.</li>
-            </ul>
-        </section>
+        <!-- Research Paper 2: Optimizing Sales Forecasting with Time-Series Analysis -->
         <section class="section card">
             <h2>Optimizing Sales Forecasting with Time-Series Analysis</h2>
             <p>
-                Sales forecasting is crucial for businesses to optimize inventory, improve cash flow, and better plan for growth.
-                In this project, we applied time-series analysis to predict sales for a retail business based on historical sales data.
-                Various time-series forecasting models, including ARIMA, Exponential Smoothing, and Facebook Prophet, were utilized to
-                analyze past sales trends and make accurate predictions for future sales. The goal was to provide businesses with 
-                reliable forecasting techniques to optimize stock levels, minimize costs, and improve operational efficiency.
-                After evaluating multiple models using performance metrics such as Mean Absolute Percentage Error (MAPE) and Root Mean 
-                Squared Error (RMSE), the ARIMA model was found to yield the most accurate and reliable results for sales prediction.
-                This approach provides valuable insights to businesses, enabling them to make data-driven decisions and adapt to future trends.
+                Sales forecasting is crucial for businesses to plan their inventory, staffing, and budgeting. This research focuses on improving the accuracy of sales forecasting using time-series analysis techniques. We explored various forecasting models, including ARIMA, Exponential Smoothing, and Prophet, to determine the best fit for predicting sales data. By analyzing historical sales data and integrating external factors such as promotions and seasonality, we were able to provide businesses with more accurate sales predictions. The study found that combining traditional and machine learning models improved the accuracy of forecasts, especially during periods of high variability.
             </p>
             <h3>Technologies Used:</h3>
             <ul>
-                <li>Time-Series Analysis (ARIMA, Exponential Smoothing, Prophet)</li>
-                <li>Python (Pandas, NumPy, scikit-learn)</li>
-                <li>Data Visualization (Matplotlib, Seaborn)</li>
+                <li>Time-Series Forecasting (ARIMA, Exponential Smoothing, Prophet)</li>
+                <li>Python (Pandas, NumPy, Scikit-learn)</li>
                 <li>Sales Data Analysis</li>
-                <li>Model Evaluation Metrics (MAPE, RMSE)</li>
+                <li>Model Evaluation (MAE, MSE, RMSE)</li>
             </ul>
             <h3>Skills Developed:</h3>
             <ul>
                 <li>Sales Forecasting Techniques</li>
-                <li>Time-Series Data Analysis</li>
-                <li>Data Cleaning and Preprocessing</li>
-                <li>Model Evaluation and Hyperparameter Tuning</li>
-                <li>Business Intelligence and Decision-Making</li>
+                <li>Time-Series Analysis and Modeling</li>
+                <li>Data Preprocessing and Feature Engineering</li>
+                <li>Performance Metric Calculation</li>
             </ul>
             <h3>Major Flaws and Areas of Improvement:</h3>
             <ul>
-                <li>Sales patterns may fluctuate due to external factors like promotions or economic changes, which traditional models may not account for.</li>
-                <li>ARIMA may underperform for highly seasonal data or in cases of irregular sales patterns.</li>
+                <li>The accuracy of the model is influenced by the frequency and granularity of the data collected.</li>
+                <li>External factors like unexpected events (e.g., economic downturns) can drastically affect the predictions.</li>
             </ul>
             <h3>Future Improvements:</h3>
             <ul>
-                <li>Incorporating external features such as promotions, holidays, and economic indicators to improve the accuracy of forecasts.</li>
-                <li>Exploring machine learning-based models, such as Random Forest and XGBoost, for enhanced forecasting accuracy.</li>
-                <li>Implementing real-time data updates to continuously refine models and adjust forecasts based on recent trends.</li>
+                <li>Exploring advanced machine learning models such as LSTM and XGBoost for better predictive accuracy.</li>
+                <li>Integrating real-time data to adjust forecasts dynamically as new sales data becomes available.</li>
             </ul>
         </section>
-        
-        <!-- Research Paper 7: Exploring Sentiment Analysis in Customer Feedback -->
-<section class="section card">
-    <h2>Exploring Sentiment Analysis in Customer Feedback</h2>
-    <p>
-        Understanding customer sentiment is essential for businesses aiming to enhance customer experience, improve products,
-        and increase customer loyalty. In this project, sentiment analysis was applied to customer feedback to gain valuable
-        insights into customer satisfaction. By utilizing natural language processing (NLP) techniques, we analyzed customer
-        reviews, social media comments, and survey responses to classify feedback as positive, negative, or neutral. 
-        The goal was to enable businesses to automatically assess customer satisfaction and respond more effectively to their 
-        needs. Various machine learning models, including Naive Bayes, Support Vector Machines (SVM), and deep learning models,
-        were evaluated for their ability to accurately predict sentiment. After comparing the results using performance 
-        metrics like accuracy, precision, recall, and F1 score, the deep learning-based models outperformed the traditional 
-        machine learning models, showcasing their effectiveness in extracting nuanced sentiments from complex, unstructured data.
-    </p>
-    <h3>Technologies Used:</h3>
-    <ul>
-        <li>Natural Language Processing (NLP)</li>
-        <li>Machine Learning Models (Naive Bayes, SVM)</li>
-        <li>Deep Learning (Recurrent Neural Networks, LSTM)</li>
-        <li>Python (Pandas, NumPy, scikit-learn, Keras)</li>
-        <li>Text Preprocessing (Tokenization, Lemmatization, Stopword Removal)</li>
-    </ul>
-    <h3>Skills Developed:</h3>
-    <ul>
-        <li>Text Preprocessing and Feature Engineering</li>
-        <li>Building and Evaluating Machine Learning Models</li>
-        <li>Sentiment Analysis for Business Insights</li>
-        <li>Deep Learning for NLP</li>
-        <li>Model Optimization and Performance Evaluation</li>
-    </ul>
-    <h3>Major Flaws and Areas of Improvement:</h3>
-    <ul>
-        <li>Challenges in handling ambiguous or sarcastic language in customer feedback, which may lead to misclassification of sentiment.</li>
-        <li>Data imbalance issues, where some classes (e.g., positive feedback) may dominate, leading to biased model performance.</li>
-    </ul>
-    <h3>Future Improvements:</h3>
-    <ul>
-        <li>Incorporating context-aware models (such as transformers like BERT) to better understand the nuances in customer feedback.</li>
-        <li>Using multi-label classification to capture mixed sentiments in a single feedback.</li>
-        <li>Expanding the dataset to include multilingual feedback for global sentiment analysis.</li>
-    </ul>
-</section>
+
+        <!-- Research Paper 3: Improving Customer Segmentation with Clustering Algorithms -->
+        <section class="section card">
+            <h2>Improving Customer Segmentation with Clustering Algorithms</h2>
+            <p>
+                Customer segmentation is a key process for businesses looking to tailor their marketing efforts. This research explores how clustering algorithms like K-Means, DBSCAN, and Hierarchical Clustering can improve customer segmentation strategies. By analyzing purchasing behavior, demographics, and other features, we identified distinct customer groups that helped businesses personalize their marketing campaigns. We also examined the impact of different distance metrics and the choice of clustering algorithm on the quality of the segments.
+            </p>
+            <h3>Technologies Used:</h3>
+            <ul>
+                <li>Clustering Algorithms (K-Means, DBSCAN, Hierarchical Clustering)</li>
+                <li>Python (Scikit-learn, Matplotlib, Seaborn)</li>
+                <li>Customer Data Analysis</li>
+                <li>Data Preprocessing (Normalization, Scaling)</li>
+            </ul>
+            <h3>Skills Developed:</h3>
+            <ul>
+                <li>Clustering and Unsupervised Learning</li>
+                <li>Data Exploration and Feature Engineering</li>
+                <li>Customer Behavior Analysis</li>
+            </ul>
+            <h3>Major Flaws and Areas of Improvement:</h3>
+            <ul>
+                <li>Clustering algorithms are sensitive to noise and outliers in the data.</li>
+                <li>The interpretation of clusters can be subjective and dependent on domain knowledge.</li>
+            </ul>
+            <h3>Future Improvements:</h3>
+            <ul>
+                <li>Incorporating additional data sources like customer feedback and social media sentiment for richer customer profiles.</li>
+                <li>Exploring advanced clustering techniques such as DBN or GANs for improved segmentation.</li>
+            </ul>
+        </section>
 
     </div>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Shuaib Iqbal. All rights reserved.</p>
+        <p>© 2025 Shuaib Iqbal. All rights reserved.</p>
     </footer>
 </body>
 

@@ -131,59 +131,134 @@
     <!-- Projects Section -->
     <header>
         <h1>My Projects</h1>
-        <p>Explore my hands-on work in the fields of Data Science and Machine Learning</p>
+        <p>Explore my hands-on work in Data Science, Machine Learning, Web Scraping, Automation, and more</p>
     </header>
 
     <div class="container">
-        <!-- Project 1 -->
+        <!-- Project 1: Web Scraping for E-commerce -->
         <section class="section card">
-            <h2>Sales Forecasting Model</h2>
-            <p><strong>Technologies Used:</strong> Python, Scikit-learn, Pandas, Azure ML</p>
+            <h2>Web Scraping for E-commerce</h2>
+            <p><strong>Technologies Used:</strong> Python, BeautifulSoup, Selenium, Requests, Proxy Rotators, CAPTCHA Solvers</p>
             <p>
-                Developed a predictive sales forecasting model for an e-commerce platform to optimize inventory management.
-                The model uses historical sales data and machine learning techniques to predict future sales trends with a
-                95% accuracy rate.
+                This project focuses on scraping product data from multiple e-commerce websites like Amazon, eBay, and Walmart. I employed <strong>BeautifulSoup</strong> for parsing HTML content and <strong>Selenium</strong> for handling dynamic content (JavaScript-heavy pages). Using <strong>Requests</strong> for efficient HTTP requests, the scraped data was then stored in databases for further analysis.
             </p>
             <p>
-                The project involved cleaning and preprocessing data, feature engineering, training multiple machine learning
-                models, and deploying the best model using Azure Machine Learning.
+                The main challenge in this project was bypassing anti-scraping mechanisms like CAPTCHAs and IP blocking. To address this, I integrated <strong>Proxy Rotators</strong> and <strong>CAPTCHA Solvers</strong> to ensure smooth and continuous scraping. This helped to extract valuable product data for market analysis, pricing optimization, and competitor analysis.
             </p>
+            <ul>
+                <li><strong>Libraries/Tools:</strong> BeautifulSoup, Selenium, Requests, Pandas</li>
+                <li><strong>Techniques:</strong> Web Crawling, Data Extraction, Anti-Scraping Mechanisms</li>
+                <li><strong>Challenges:</strong> Handling dynamic content, bypassing CAPTCHA and IP blocks</li>
+            </ul>
         </section>
 
-        <!-- Project 2 -->
+        <!-- Project 2: Google Maps Location Scraping -->
         <section class="section card">
-            <h2>Customer Sentiment Analysis</h2>
-            <p><strong>Technologies Used:</strong> Python, NLTK, TextBlob, Flask, Docker</p>
+            <h2>Google Maps Location Scraping</h2>
+            <p><strong>Technologies Used:</strong> Python, Requests, BeautifulSoup, Regex, JSON</p>
             <p>
-                Built a sentiment analysis web app that analyzes customer reviews and categorizes them into positive, negative,
-                or neutral sentiment. The app uses NLP techniques to clean and process textual data and leverages machine
-                learning algorithms to classify the sentiment.
+                In this project, I focused on scraping location-based business data from Google Maps. By using <strong>Requests</strong> to fetch HTML content and <strong>BeautifulSoup</strong> for parsing, I was able to extract key business details, such as addresses, ratings, and user reviews.
             </p>
             <p>
-                Deployed the application using Flask and Docker, allowing for easy scaling and implementation in real-time
-                scenarios.
+                The extracted data was cleaned using <strong>Regex</strong> and formatted as <strong>JSON</strong> for easy analysis. The data was then used to build a location intelligence system for businesses, helping them identify market trends, competitor locations, and customer sentiments based on reviews.
             </p>
+            <ul>
+                <li><strong>Libraries/Tools:</strong> Requests, BeautifulSoup, Regex, JSON, Pandas</li>
+                <li><strong>Techniques:</strong> Data Cleaning, Sentiment Analysis, Location-Based Analysis</li>
+                <li><strong>Challenges:</strong> Structuring unstructured data, scraping API limitations</li>
+            </ul>
         </section>
 
-        <!-- Project 3 -->
+        <!-- Project 3: Web Scraping Consultancy for Market Research -->
         <section class="section card">
-            <h2>Recommendation System</h2>
-            <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, Collaborative Filtering</p>
+            <h2>Web Scraping Consultancy for Market Research</h2>
+            <p><strong>Technologies Used:</strong> Scrapy, BeautifulSoup, Google Cloud Functions</p>
             <p>
-                Developed a recommendation engine for an online movie platform to suggest movies based on user preferences.
-                The system uses collaborative filtering to predict user preferences based on historical interactions.
+                As part of this consulting project, I built web scraping systems for clients to gather market intelligence, including price trends, product availability, and competitor behavior. I used <strong>Scrapy</strong> for scalable and efficient web scraping, allowing clients to automate their data extraction workflows.
             </p>
             <p>
-                The recommendation engine was trained on a large dataset and integrated into the platform’s recommendation
-                pipeline, improving user engagement by 20%.
+                To deploy the scraping workflows efficiently, I utilized <strong>Google Cloud Functions</strong> to run scraping tasks on a serverless architecture, ensuring scalability and reliability. Additionally, I advised on ethical scraping practices and strategies to avoid detection by websites.
             </p>
+            <ul>
+                <li><strong>Libraries/Tools:</strong> Scrapy, BeautifulSoup, Google Cloud Functions, Docker</li>
+                <li><strong>Techniques:</strong> Scalable Web Scraping, Serverless Architecture, Automation</li>
+                <li><strong>Challenges:</strong> Ensuring scalability, avoiding scraping blocks</li>
+            </ul>
+        </section>
+
+        <!-- Project 4: YouTube Sentiment Analysis -->
+        <section class="section card">
+            <h2>YouTube Sentiment Analysis</h2>
+            <p><strong>Technologies Used:</strong> Python, YouTube API, TextBlob, NLTK, Matplotlib</p>
+            <p>
+                This project involves analyzing user sentiment in YouTube comments using <strong>TextBlob</strong> for sentiment classification. By utilizing the <strong>YouTube API</strong>, I retrieved metadata and comments from popular videos, processed the text using <strong>NLTK</strong>, and performed sentiment analysis to categorize feedback as positive, negative, or neutral.
+            </p>
+            <p>
+                The results were visualized using <strong>Matplotlib</strong>, helping businesses understand audience sentiment and engagement trends for better content strategy. This project highlighted the power of social media data for brand management and public relations.
+            </p>
+            <ul>
+                <li><strong>Libraries/Tools:</strong> YouTube API, TextBlob, NLTK, Matplotlib</li>
+                <li><strong>Techniques:</strong> Sentiment Analysis, Data Visualization, Social Media Analytics</li>
+                <li><strong>Challenges:</strong> Handling large datasets, ensuring data quality</li>
+            </ul>
+        </section>
+
+        <!-- Project 5: Sales Forecasting for E-commerce -->
+        <section class="section card">
+            <h2>Sales Forecasting for E-commerce</h2>
+            <p><strong>Technologies Used:</strong> Python, Scikit-learn, Pandas, Azure Machine Learning</p>
+            <p>
+                This project involved developing a machine learning-based sales forecasting model to predict future demand for products in an e-commerce store. By analyzing historical sales data, I built a regression model using <strong>Scikit-learn</strong> and optimized it to provide accurate predictions, reducing inventory wastage and improving stock management.
+            </p>
+            <p>
+                The model was deployed on <strong>Azure Machine Learning</strong> to allow for easy scalability and real-time predictions. I also integrated the system with the client’s inventory management system to provide actionable insights for better decision-making.
+            </p>
+            <ul>
+                <li><strong>Libraries/Tools:</strong> Scikit-learn, Pandas, NumPy, Matplotlib</li>
+                <li><strong>Techniques:</strong> Regression Analysis, Model Optimization, Real-time Prediction</li>
+                <li><strong>Challenges:</strong> Feature engineering, model accuracy</li>
+            </ul>
+        </section>
+
+        <!-- Project 6: Customer Review Sentiment Analysis -->
+        <section class="section card">
+            <h2>Customer Review Sentiment Analysis</h2>
+            <p><strong>Technologies Used:</strong> Python, Flask, Docker, TextBlob, NLTK</p>
+            <p>
+                I developed a sentiment analysis tool that evaluates customer reviews for e-commerce websites. By deploying the model via a Flask web application, users can enter a product review and receive a sentiment score. The backend uses <strong>TextBlob</strong> and <strong>NLTK</strong> for text processing and sentiment analysis.
+            </p>
+            <p>
+                This application was containerized using <strong>Docker</strong>, ensuring portability and easy deployment across different environments. The system was hosted on <strong>Heroku</strong> for live use by businesses seeking to monitor customer satisfaction.
+            </p>
+            <ul>
+                <li><strong>Libraries/Tools:</strong> Flask, Docker, TextBlob, NLTK</li>
+                <li><strong>Techniques:</strong> Sentiment Classification, Web Application Development, Text Processing</li>
+                <li><strong>Challenges:</strong> Ensuring accurate sentiment classification, deployment scalability</li>
+            </ul>
+        </section>
+
+        <!-- Project 7: Collaborative Filtering Recommendation System -->
+        <section class="section card">
+            <h2>Collaborative Filtering Recommendation System</h2>
+            <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, Scikit-learn</p>
+            <p>
+                I built a movie recommendation system using collaborative filtering to suggest movies to users based on their preferences. By applying <strong>TensorFlow</strong> and <strong>Keras</strong>, I developed a deep learning-based model that learns from user-item interactions and improves its predictions over time.
+            </p>
+            <p>
+                The system also incorporated <strong>Scikit-learn</strong> for data preprocessing and feature extraction, ensuring the model could handle large-scale datasets. The recommendation system was deployed on a cloud platform to provide scalable recommendations in real-time.
+            </p>
+            <ul>
+                <li><strong>Libraries/Tools:</strong> TensorFlow, Keras, Scikit-learn, Pandas</li>
+                <li><strong>Techniques:</strong> Collaborative Filtering, Deep Learning, Recommendation Algorithms</li>
+                <li><strong>Challenges:</strong> Data sparsity, handling large-scale user interactions</li>
+            </ul>
         </section>
     </div>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Shuaib Iqbal. All rights reserved.</p>
+        <p>&copy; 2025 Shuaib Iqbal. All Rights Reserved.</p>
     </footer>
-
 </body>
 
 </html>

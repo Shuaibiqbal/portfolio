@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Hosting Guide — Shuaib Iqbal</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .container { max-width: 800px; margin: 0 auto; }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #58a6ff, #bc8cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    color: #8b949e;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  /* Part headers */
+  .part {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 40px 0 20px;
+  }
+
+  .part-badge {
+    background: linear-gradient(135deg, #1f6feb, #388bfd);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .part-badge.hf { background: linear-gradient(135deg, #ff6b35, #f7c59f); }
+  .part-badge.gh { background: linear-gradient(135deg, #238636, #3fb950); }
+  .part-badge.warn { background: linear-gradient(135deg, #9e6a03, #d29922); }
+
+  .part-title { font-size: 1.1rem; font-weight: 700; color: #e6edf3; }
+
+  /* Step cards */
+  .step {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    position: relative;
+  }
+
+  .step-num {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: #21262d;
+    border: 1px solid #30363d;
+    color: #8b949e;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .step h3 { font-size: 0.95rem; font-weight: 600; color: #e6edf3; margin-bottom: 10px; }
+
+  .step p { font-size: 0.88rem; color: #8b949e; line-height: 1.6; margin-bottom: 10px; }
+  .step p:last-child { margin-bottom: 0; }
+
+  /* Links */
+  a.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #21262d;
+    border: 1px solid #30363d;
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 8px;
+    margin: 4px 4px 4px 0;
+    transition: all 0.2s;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  a.btn:hover { background: #30363d; border-color: #58a6ff; }
+  a.btn.green { color: #3fb950; }
+  a.btn.green:hover { border-color: #3fb950; }
+  a.btn.orange { color: #f78166; }
+  a.btn.orange:hover { border-color: #f78166; }
+
+  /* Code blocks */
+  .code-block {
+    background: #010409;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 10px 0 0;
+    overflow-x: auto;
+  }
+
+  .code-block pre {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #e6edf3;
+    line-height: 1.7;
+    white-space: pre;
+  }
+
+  .code-block .comment { color: #8b949e; }
+  .code-block .cmd { color: #79c0ff; }
+  .code-block .str { color: #a5d6ff; }
+  .code-block .kw { color: #ff7b72; }
+
+  /* Inline code */
+  code {
+    background: #21262d;
+    color: #ff7b72;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  /* File tree */
+  .file-tree {
+    background: #010409;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 10px 0 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    line-height: 1.9;
+    color: #8b949e;
+  }
+
+  .file-tree .folder { color: #58a6ff; }
+  .file-tree .file { color: #e6edf3; }
+  .file-tree .no { color: #f85149; text-decoration: line-through; }
+  .file-tree .yes { color: #3fb950; }
+  .file-tree .new { color: #d2a8ff; }
+
+  /* Warning box */
+  .warn-box {
+    background: #2d1a00;
+    border: 1px solid #9e6a03;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 10px;
+  }
+
+  .warn-box h3 { color: #d29922; font-size: 0.9rem; margin-bottom: 8px; }
+  .warn-box p { color: #8b949e; font-size: 0.85rem; line-height: 1.6; }
+
+  /* Success box */
+  .success-box {
+    background: #0d2119;
+    border: 1px solid #238636;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .success-box h3 { color: #3fb950; font-size: 1rem; margin-bottom: 8px; }
+  .success-box p { color: #8b949e; font-size: 0.85rem; }
+  .success-box a { color: #58a6ff; }
+
+  .divider { border: none; border-top: 1px solid #21262d; margin: 10px 0; }
+
+  .tag {
+    display: inline-block;
+    background: #1f6feb22;
+    color: #58a6ff;
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .tag.free { background: #23863622; color: #3fb950; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>🚀 Portfolio Hosting — Complete Guide</h1>
+  <p class="subtitle">Shuaib Iqbal · GitHub Pages + Hugging Face Spaces · 100% Free · No Card</p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PART A: HF SPACES -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <div class="part">
+    <span class="part-badge hf">Part 1</span>
+    <span class="part-title">Backend — Hugging Face Spaces <span class="tag free">FREE</span></span>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 1</div>
+    <h3>Account Banayein</h3>
+    <p>Hugging Face pe free signup karein — koi card nahi maangega.</p>
+    <a class="btn orange" href="https://huggingface.co/join" target="_blank">→ huggingface.co/join</a>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 2</div>
+    <h3>Nayi Space Banayein</h3>
+    <p>Login ke baad yahan click karein:</p>
+    <a class="btn orange" href="https://huggingface.co/new-space" target="_blank">→ huggingface.co/new-space</a>
+    <p style="margin-top:10px;">Yeh settings fill karein:</p>
+    <div class="code-block"><pre>
+Space name   →  <span class="str">portfolio-rag-api</span>
+License      →  <span class="str">mit</span>
+SDK          →  <span class="kw">Docker</span>        ← zaroori, yahi select karna
+Visibility   →  <span class="str">Public</span>
+</pre></div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 3</div>
+    <h3>OpenAI API Key Secret Mein Dalein</h3>
+    <p>Space ban jaane ke baad: <code>Settings → Repository secrets → New secret</code></p>
+    <div class="code-block"><pre>
+Name   →  <span class="str">OPENAI_API_KEY</span>
+Value  →  <span class="str">sk-proj-...</span>  ← aapki nayi OpenAI key
+</pre></div>
+    <p style="margin-top:8px;">Nayi OpenAI key yahan se banayein:</p>
+    <a class="btn orange" href="https://platform.openai.com/api-keys" target="_blank">→ platform.openai.com/api-keys</a>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 4</div>
+    <h3>Yeh Files Space Mein Upload Karein</h3>
+    <p>Space ke andar <strong>"Files"</strong> tab → <strong>"Add file"</strong> → <strong>"Upload files"</strong></p>
+    <p style="margin-top:6px;">Sirf yeh files upload karni hain (<code>backend/</code> folder se):</p>
+    <div class="file-tree">
+<span class="new">Dockerfile</span>          ← neeche se download karein
+<span class="new">README.md</span>           ← neeche se download karein
+<span class="file">main.py</span>
+<span class="file">requirements.txt</span>
+<span class="folder">rag/</span>
+  <span class="file">__init__.py</span>
+  <span class="file">chain.py</span>
+<span class="folder">docs/</span>
+  <span class="file">profile.txt</span>
+  <span class="file">Shuaib_Iqbal_CV_.pdf</span>
+<span class="folder">vectorstore/</span>
+  <span class="file">index.faiss</span>
+  <span class="file">index.pkl</span>
+
+<span class="no">.venv/</span>              ← bilkul mat upload karein
+<span class="no">__pycache__/</span>        ← bilkul mat upload karein
+<span class="no">.env</span>               ← bilkul mat upload karein
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 5</div>
+    <h3>Dockerfile Download Karein (ready-made)</h3>
+    <p>Yeh file already aapke backend folder mein hai. Wahan se upload karein ya yahan se copy karein:</p>
+    <div class="code-block"><pre>
+<span class="kw">FROM</span> python:3.10-slim
+
+<span class="kw">WORKDIR</span> /app
+
+<span class="kw">COPY</span> requirements.txt .
+<span class="kw">RUN</span> pip install --no-cache-dir -r requirements.txt
+
+<span class="kw">COPY</span> main.py .
+<span class="kw">COPY</span> rag/ ./rag/
+<span class="kw">COPY</span> docs/ ./docs/
+<span class="kw">COPY</span> vectorstore/ ./vectorstore/
+
+<span class="kw">EXPOSE</span> 7860
+
+<span class="kw">CMD</span> ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
+</pre></div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 6</div>
+    <h3>Build Check Karein</h3>
+    <p>Files upload hone ke baad Space automatically build shuru ho jaye ga. <strong>2-3 minute</strong> wait karein.</p>
+    <p style="margin-top:6px;">Jab green <code>Running</code> badge aaye, health check karein:</p>
+    <div class="code-block"><pre>
+<span class="comment"># Browser mein yeh URL kholen:</span>
+<span class="cmd">https://shuaibiqbal-portfolio-rag-api.hf.space/health</span>
+
+<span class="comment"># Response aana chahiye:</span>
+<span class="str">{"status": "ok"}</span>
+</pre></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- PART B: GITHUB PAGES -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <div class="part">
+    <span class="part-badge gh">Part 2</span>
+    <span class="part-title">Frontend — GitHub Pages <span class="tag free">FREE</span></span>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 1</div>
+    <h3>GitHub Account Check Karein</h3>
+    <p>Aapka GitHub account already hai: <code>Shuaibiqbal</code></p>
+    <a class="btn green" href="https://github.com/Shuaibiqbal" target="_blank">→ github.com/Shuaibiqbal</a>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 2</div>
+    <h3>Nayi Repository Banayein</h3>
+    <p>Naam <strong>exactly</strong> yeh hona chahiye — isi se GitHub Pages ka URL banta hai:</p>
+    <a class="btn green" href="https://github.com/new" target="_blank">→ github.com/new</a>
+    <div class="code-block"><pre>
+Repository name  →  <span class="str">Shuaibiqbal.github.io</span>   ← exactly yahi naam
+Visibility       →  <span class="kw">Public</span>
+Initialize with  →  <span class="str">README</span>  ← tick karein
+</pre></div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 3</div>
+    <h3>index.html Mein Backend URL Update Karein</h3>
+    <p>Aapki <code>index.html</code> already update ho chuki hai (maine kar di). Verify karein line 47:</p>
+    <div class="code-block"><pre>
+<span class="comment">// Line 47 — yeh hona chahiye:</span>
+window.AI_BACKEND_URL = <span class="str">'https://shuaibiqbal-portfolio-rag-api.hf.space'</span>;
+</pre></div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 4</div>
+    <h3>Files Upload Karein GitHub Pe</h3>
+    <p>Repository mein <strong>"uploading an existing file"</strong> click karein, phir yeh folders drag-drop karein:</p>
+    <div class="file-tree">
+<span class="yes">✓</span> <span class="file">index.html</span>
+<span class="yes">✓</span> <span class="folder">css/</span>
+<span class="yes">✓</span> <span class="folder">js/</span>
+<span class="yes">✓</span> <span class="folder">sections/</span>
+<span class="yes">✓</span> <span class="folder">assets/</span>
+<span class="yes">✓</span> <span class="folder">data/</span>
+
+<span class="no">✗  backend/</span>      ← bilkul nahi
+<span class="no">✗  .next/</span>        ← bilkul nahi
+<span class="no">✗  .git/</span>         ← bilkul nahi
+    </div>
+    <p style="margin-top:10px;">Ya agar Git use karna chahte hain terminal se:</p>
+    <div class="code-block"><pre>
+<span class="comment"># Terminal mein portfolio folder mein jao</span>
+cd portfolio
+
+<span class="comment"># Remote set karein</span>
+<span class="cmd">git remote set-url origin https://github.com/Shuaibiqbal/Shuaibiqbal.github.io.git</span>
+
+<span class="comment"># Push karein</span>
+<span class="cmd">git add index.html css/ js/ sections/ assets/ data/</span>
+<span class="cmd">git commit -m "deploy portfolio"</span>
+<span class="cmd">git push origin main</span>
+</pre></div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">STEP 5</div>
+    <h3>GitHub Pages Enable Karein</h3>
+    <p>Repository → <strong>Settings</strong> → left sidebar mein <strong>Pages</strong></p>
+    <a class="btn green" href="https://github.com/Shuaibiqbal/Shuaibiqbal.github.io/settings/pages" target="_blank">→ Direct Settings Link</a>
+    <div class="code-block"><pre>
+Source  →  <span class="kw">Deploy from a branch</span>
+Branch  →  <span class="str">main</span>  /  <span class="str">root</span>
+        →  <span class="cmd">Save</span> click karein
+</pre></div>
+    <p style="margin-top:8px;">2-3 minute mein live ho jaye ga ✅</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- WARNING -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <div class="part">
+    <span class="part-badge warn">⚠️ Zaroori</span>
+    <span class="part-title">OpenAI Key Revoke Karein — Abhi</span>
+  </div>
+
+  <div class="warn-box">
+    <h3>🔴 Aapki API key .env.example mein expose ho chuki hai</h3>
+    <p>Yeh file publicly accessible hai. Koi bhi is key ko use karke aapka OpenAI balance khatam kar sakta hai.</p>
+  </div>
+
+  <div class="step" style="margin-top:14px;">
+    <div class="step-num">ABHI KAREIN</div>
+    <h3>Purani Key Revoke Karein</h3>
+    <a class="btn orange" href="https://platform.openai.com/api-keys" target="_blank">→ platform.openai.com/api-keys</a>
+    <div class="code-block"><pre>
+<span class="kw">1.</span> Woh key dhundein jo <span class="str">sk-proj-h9Wai...</span> se shuru hoti hai
+<span class="kw">2.</span> Delete / Revoke click karein
+<span class="kw">3.</span> "Create new secret key" → nayi key banayein
+<span class="kw">4.</span> Wohi nayi key HF Space secret mein dalein (Step 3)
+</pre></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SUCCESS -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <div class="success-box">
+    <h3>🎉 Done! Aapka Portfolio Live Ho Jaye Ga:</h3>
+    <p style="margin-top:8px;">
+      <strong>Frontend:</strong> <a href="https://shuaibiqbal.github.io" target="_blank">https://shuaibiqbal.github.io</a><br><br>
+      <strong>Backend API:</strong> <a href="https://shuaibiqbal-portfolio-rag-api.hf.space/health" target="_blank">https://shuaibiqbal-portfolio-rag-api.hf.space/health</a><br><br>
+      <span style="color:#8b949e; font-size:0.82rem;">Dono 24/7 free chalenge — koi card nahi, koi bill nahi</span>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>

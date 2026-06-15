@@ -1,0 +1,163 @@
+{
+  "title": "My",
+  "titleAccent": "Projects",
+  "subtitle": "AI/ML projects spanning LLM applications, RAG systems, conversational agents, and enterprise-grade FMCG analytics — from open-source demos to production deployments.",
+  "items": [
+    {
+      "id": "sales_intelligence_chat",
+      "title": "Sales Intelligence Chat — Ask Your Data Anything",
+      "tags": ["LangChain", "GPT-4", "Streamlit"],
+      "desc": "Chat with a 14-million-row FMCG sales dataset in plain English using GPT-4 and LangChain agents. Full multi-turn session memory — every follow-up question builds on the last answer, just like talking to a human analyst. Auto-detects tables, numbers, and text for the best display format. Memory-optimised loader cuts RAM by ~80%.",
+      "stackLabel": "Tech Stack",
+      "stack": ["LangChain", "OpenAI GPT-4", "Streamlit", "Pandas", "ConversationBufferMemory", "python-dotenv"],
+      "image": "assets/images/projects/sales-intelligence-chat.png",
+      "placeholder": "💬",
+      "github": "https://github.com/Shuaibiqbal/Sales-Intelligence-Chat-Ask-Your-Data-Anything",
+      "demo": ""
+    },
+    {
+      "id": "document_qa_bot",
+      "title": "AI-Powered Document Q&A Bot",
+      "tags": ["RAG", "LangChain", "FAISS"],
+      "desc": "Full end-to-end RAG pipeline — upload any PDF, ask questions in plain English, and get precise answers with source page citations. Implements document loading, 500-token overlapping chunking, OpenAI embeddings, FAISS vector indexing, and GPT-3.5-turbo synthesis. Grounded answers: no hallucinations.",
+      "stackLabel": "Tech Stack",
+      "stack": ["LangChain", "FAISS", "OpenAI GPT-3.5", "Streamlit", "PyPDF", "RAG Pipeline"],
+      "image": "assets/images/projects/document-qa-bot.png",
+      "placeholder": "📄",
+      "github": "https://github.com/Shuaibiqbal/ai-powered-document-qa-bot",
+      "demo": ""
+    },
+    {
+      "id": "conversational_chatbot",
+      "title": "Conversational AI Chatbot with Memory",
+      "tags": ["LangChain", "Memory", "GPT-3.5"],
+      "desc": "Stateful multi-turn AI chatbot that genuinely remembers what you said. LangChain ConversationBufferMemory and ConversationChain maintain full context across the entire session — every reply is context-aware, not a fresh one-shot call. Streamlit session_state keeps memory alive across UI reruns without resetting conversation.",
+      "stackLabel": "Tech Stack",
+      "stack": ["LangChain", "ConversationBufferMemory", "OpenAI GPT-3.5", "Streamlit", "LCEL", "Python 3.12"],
+      "image": "assets/images/projects/conversational-chatbot.png",
+      "placeholder": "🧠",
+      "github": "https://github.com/shuaibiqbal/conversational-ai-chatbot-with-memory",
+      "demo": ""
+    },
+    {
+      "id": "ecommerce_chatbot",
+      "title": "E-Commerce AI Chatbot — Fully Offline",
+      "tags": ["LLaMA 3", "Ollama", "Flask"],
+      "desc": "Fully offline AI chatbot for e-commerce — zero cloud dependency, zero API cost. LLaMA 3 runs locally via Ollama with LangChain for context-aware Q&A. Supports both general knowledge queries and business-specific contextual answers from your own product/policy data. Ideal for private deployments.",
+      "stackLabel": "Tech Stack",
+      "stack": ["LLaMA 3", "Ollama", "LangChain", "Flask", "Offline LLM", "Python"],
+      "image": "",
+      "placeholder": "🛒",
+      "github": "https://github.com/shuaibiqbal/ecommerce-ai-chatbot-llama3",
+      "demo": ""
+    },
+    {
+      "id": "resume_assistant",
+      "title": "AI-Powered Resume Assistant — Fully Offline",
+      "tags": ["LangChain", "LLaMA 3", "Ollama"],
+      "desc": "Privacy-first offline LLM assistant for resume generation and contextual rewriting — no data ever leaves the machine. LLaMA 3 via Ollama with structured prompt chaining generates role-targeted resumes, rewrites experience bullets, and adapts tone for any job description.",
+      "stackLabel": "Tech Stack",
+      "stack": ["LangChain", "LLaMA 3", "Ollama", "Streamlit", "Prompt Engineering", "Local LLM"],
+      "image": "",
+      "placeholder": "📝",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "aisight_etl_airflow",
+      "title": "AiSight ETL & Airflow Data Pipeline",
+      "tags": ["Apache Airflow", "ETL", "FMCG"],
+      "desc": "Enterprise-grade data orchestration pipeline for FMCG clients at AiSight.ai. Automates ingestion, transformation, and loading of multi-source sales and distribution data via Apache Airflow DAGs — enabling downstream ML models and real-time analytics dashboards to consume clean, structured data at scale.",
+      "stackLabel": "Tech Stack",
+      "stack": ["Apache Airflow", "Python", "PostgreSQL", "Docker", "ETL", "Data Orchestration"],
+      "image": "assets/images/projects/aisight-etl-airflow.png",
+      "placeholder": "⚙️",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "hydra_multirocket",
+      "title": "Time-Series Classification: Hydra + MultiRocket",
+      "tags": ["Hydra", "MultiRocket", "Time-Series"],
+      "desc": "State-of-the-art time-series classification combining the Hydra and MultiRocket algorithms. Benchmarked across multiple FMCG and financial datasets, achieving top-tier accuracy with minimal compute. Designed as a drop-in classifier for sequential sales, demand, and stock-price data.",
+      "stackLabel": "Tech Stack",
+      "stack": ["Hydra", "MultiRocket", "Scikit-learn", "Python", "Time-Series Analysis", "Benchmarking"],
+      "image": "assets/images/projects/hydra-multirocket.png",
+      "placeholder": "📉",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "wav2vec2_mdd",
+      "title": "Speech Mispronunciation Detection with wav2vec2",
+      "tags": ["wav2vec2", "Speech AI", "Fine-Tuning"],
+      "desc": "Mispronunciation Detection and Diagnosis system fine-tuned on wav2vec2. Identifies and localises phoneme-level pronunciation errors in non-native speech — providing targeted feedback for language learners. Fine-tuned on annotated speech corpora with extended-PA labels for per-phoneme scoring.",
+      "stackLabel": "Tech Stack",
+      "stack": ["wav2vec2", "HuggingFace Transformers", "PyTorch", "Speech Processing", "NLP", "Fine-Tuning"],
+      "image": "assets/images/projects/wav2vec2-mdd.png",
+      "placeholder": "🎙️",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "music_composition_engine",
+      "title": "AI Music Composition Engine",
+      "tags": ["LSTM", "Deep Learning", "Music AI"],
+      "desc": "Generative deep learning system that composes original music sequences using character-level LSTM models trained on MIDI data. Produces multi-instrument melodies with controllable style and tempo — exploring the intersection of creative AI and sequence modelling at a research level.",
+      "stackLabel": "Tech Stack",
+      "stack": ["LSTM", "PyTorch", "MIDI Processing", "Music Generation", "Sequence Modelling"],
+      "image": "assets/images/projects/music-composition-engine.png",
+      "placeholder": "🎵",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "aisight_footfall_map",
+      "title": "AiSight Territory Footfall Analytics",
+      "tags": ["Geospatial", "FMCG", "Visualization"],
+      "desc": "Interactive geospatial analytics platform mapping distributor footfall, route coverage, and territory penetration for Pakistan's leading FMCG brands. Visualises outlet-level visit patterns, coverage gaps, and territory performance on dynamic maps built on AiSight's distribution intelligence layer.",
+      "stackLabel": "Tech Stack",
+      "stack": ["Geospatial Analytics", "Python", "Folium", "FMCG Analytics", "Distribution Intelligence", "ETL"],
+      "image": "",
+      "placeholder": "🗺️",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "bat_territory",
+      "title": "BAT Territory Distribution Intelligence",
+      "tags": ["Territory Analytics", "FMCG", "Dashboard"],
+      "desc": "End-to-end territory distribution analytics solution for British American Tobacco Pakistan. Provides brand managers with SKU-level territory coverage, outlet universe mapping, and weighted distribution metrics — enabling data-driven field force deployment and market expansion decisions.",
+      "stackLabel": "Tech Stack",
+      "stack": ["Territory Analytics", "Distribution Metrics", "Python", "BI Dashboard", "SQL", "FMCG"],
+      "image": "",
+      "placeholder": "📍",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "ebm_dashboard",
+      "title": "EBM Revenue Growth Management Dashboard",
+      "tags": ["RGM", "BI Dashboard", "FMCG"],
+      "desc": "Production-deployed Revenue Growth Management BI dashboard for EBM (English Biscuits Manufacturers). Consolidates SKU pricing, pack-mix optimisation, distribution coverage, and competitive benchmarking into a single real-time view — driving commercial growth decisions for Pakistan's leading biscuit brand.",
+      "stackLabel": "Tech Stack",
+      "stack": ["RGM Analytics", "BI Dashboard", "Python", "FastAPI", "PostgreSQL", "Data Visualisation"],
+      "image": "",
+      "placeholder": "📊",
+      "github": "",
+      "demo": ""
+    },
+    {
+      "id": "surveyauto_forecasting",
+      "title": "SurveyAuto AI Demand Forecasting",
+      "tags": ["Forecasting", "ML Ensemble", "Time-Series"],
+      "desc": "Multi-model demand and sales forecasting system deployed for SurveyAuto. Combines ARIMA, XGBoost, and LSTM ensembles trained on historical transaction data to generate accurate short and long-term forecasts — automating inventory planning and significantly reducing overstock and understock costs.",
+      "stackLabel": "Tech Stack",
+      "stack": ["ARIMA", "XGBoost", "LSTM", "Ensemble Methods", "Time-Series", "Scikit-learn"],
+      "image": "",
+      "placeholder": "📈",
+      "github": "",
+      "demo": ""
+    }
+  ]
+}

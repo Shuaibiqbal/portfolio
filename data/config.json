@@ -1,0 +1,10 @@
+{
+  "aiBackendUrl": "https://shuaibiqbal-portfolio-rag-api.hf.space",
+
+  "emailjs": {
+    "publicKey":       "SQZgojT8GLa_dENU2",
+    "serviceId":       "service_8iuppep",
+    "ownerTemplateId": "template_2j4o2ip",
+    "hirerTemplateId": ""
+  }
+}

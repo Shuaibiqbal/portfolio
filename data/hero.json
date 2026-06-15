@@ -1,0 +1,16 @@
+{
+  "name":       "Shuaib Iqbal",
+  "tagline":    "AI/ML Engineer  •  Generative AI  •  LLM & Agentic Systems  •  Django Backend",
+  "heading":    "Hi, I'm",
+  "subheading": "Building Scalable AI Solutions,\nIntelligent LLM Systems & Forecasting Platforms",
+  "description": "AI/ML Engineer with 4+ years of production experience turning complex AI requirements into shipped, scalable systems. I architect LLM applications, RAG pipelines, and agentic AI solutions for enterprise clients across FMCG, IoT, and SaaS — specializing in LangChain, OpenAI API, FastAPI, and end-to-end AI product delivery.",
+  "image": "assets/images/hero/shuaib1.png",
+
+  "buttons": [
+    { "label": "Hire Me",         "href": "#",             "type": "primary", "id": "heroHireBtn" },
+    { "label": "Let's Connect",   "href": "#contact",      "type": "outline" },
+    { "label": "Ask AI About Me", "href": "#ai-assistant", "type": "ai",     "id": "heroAiBtn" }
+  ],
+
+  "socials": ["github", "linkedin", "email"]
+}

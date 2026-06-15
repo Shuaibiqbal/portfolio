@@ -1,0 +1,50 @@
+/* ═══════════════════════════════════════════════════════════════
+   experience.css  —  Legacy timeline classes only.
+   Shared card styles live in certifications.css.
+   ═══════════════════════════════════════════════════════════════ */
+
+.timeline {
+  position: relative;
+  margin-top: 48px;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--cyan), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -25px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--cyan);
+  border: 3px solid var(--navy);
+  box-shadow: 0 0 0 2px var(--cyan);
+}
+
+.timeline-card {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 30px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.timeline-card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-3px);
+}

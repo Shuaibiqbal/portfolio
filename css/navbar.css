@@ -1,0 +1,151 @@
+/* ── NAVBAR ──────────────────────────────────────────────────── */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 15, 20, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1e2a38;
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  z-index: 1100;
+}
+
+.logo .dot { color: var(--cyan); }
+
+/* ── DESKTOP LINKS ──────────────────────────────────────────── */
+
+nav a {
+  color: #aab4be;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--cyan);
+}
+
+.nav-ai-link {
+  color: var(--cyan) !important;
+  opacity: 0.8;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-ai-link:hover { opacity: 1; }
+
+/* ── HAMBURGER BUTTON ───────────────────────────────────────── */
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 9600; /* above nav overlay (9500) */
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* Animate hamburger to × when open */
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── MOBILE ─────────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .nav-toggle { display: flex; }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    background: rgba(11, 15, 20, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding-top: 90px;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.35s ease, opacity 0.3s ease;
+    z-index: 9500; /* above floating buttons (8000) */
+  }
+
+  nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #1e2a38;
+    color: #aab4be;
+    transition: color 0.2s, background 0.2s;
+  }
+
+  nav a:first-child { border-top: 1px solid #1e2a38; }
+
+  nav a:hover,
+  nav a.active {
+    color: var(--cyan);
+    background: rgba(0, 180, 216, 0.05);
+  }
+}
+
+/* ── NAV OPEN: elevate navbar above floating buttons ──────────── */
+/* When mobile nav overlay is open, .navbar must be above        */
+/* floating buttons (z-index 8000) in the global stacking context */
+.navbar:has(nav.open) {
+  z-index: 9000;
+}
+
+/* Fallback for browsers without :has() support (JS adds class)  */
+body.nav-open .wa-btn,
+body.nav-open .fc-btn,
+body.nav-open .fc-panel,
+body.nav-open .fn-bar {
+  display: none !important;
+}

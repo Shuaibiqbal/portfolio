@@ -1,0 +1,98 @@
+{
+  "_note": "SINGLE SOURCE OF TRUTH for links and contact info. Used globally via window.LINKS. Social keys are referenced by hero.json, contact.json, footer.json. All other content lives in its own section JSON file.",
+  "social": {
+    "github": {
+      "label": "GitHub",
+      "url": "https://github.com/Shuaibiqbal",
+      "display": "github.com/Shuaibiqbal",
+      "icon": "github"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/shuaibiqbal/",
+      "display": "linkedin.com/in/shuaibiqbal",
+      "icon": "linkedin2"
+    },
+    "email": {
+      "label": "Email",
+      "url": "mailto:shuaibiqbaldgk@gmail.com",
+      "display": "shuaibiqbaldgk@gmail.com",
+      "icon": "email"
+    },
+    "kaggle": {
+      "label": "Kaggle",
+      "url": "https://www.kaggle.com/shebiimalik",
+      "display": "kaggle.com/shebiimalik",
+      "icon": "external"
+    },
+    "huggingface": {
+      "label": "HuggingFace",
+      "url": "https://huggingface.co/shuaibiqbal",
+      "display": "huggingface.co/shuaibiqbal",
+      "icon": "external"
+    },
+    "medium": {
+      "label": "Medium",
+      "url": "https://medium.com/@shuaibiqbal",
+      "display": "medium.com/@shuaibiqbal",
+      "icon": "external"
+    },
+    "leetcode": {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/u/sshuaibiqbal/",
+      "display": "leetcode.com/u/sshuaibiqbal",
+      "icon": "external"
+    },
+    "twitter": {
+      "label": "Twitter / X",
+      "url": "https://x.com/shebiimalik",
+      "display": "x.com/shebiimalik",
+      "icon": "external"
+    },
+    "youtube": {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@sshuaibiqbal",
+      "display": "youtube.com/@sshuaibiqbal",
+      "icon": "external"
+    },
+    "facebook": {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/malikshuaibiqbal",
+      "display": "facebook.com/malikshuaibiqbal",
+      "icon": "external"
+    },
+    "portfolio": {
+      "label": "Portfolio",
+      "url": "https://shuaibiqbal.github.io/portfolio",
+      "display": "shuaibiqbal.github.io/portfolio",
+      "icon": "external"
+    },
+    "whatsapp_1": {
+      "label": "WhatsApp",
+      "url": "https://wa.me/923457134603?text=Hi%20Shuaib%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect.",
+      "display": "(+92) 345 7134603",
+      "icon": "whatsapp",
+      "isWhatsApp": true
+    },
+    "whatsapp_2": {
+      "label": "WhatsApp",
+      "url": "https://wa.me/923017184603?text=Hi%20Shuaib%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect.",
+      "display": "(+92) 301 7184603",
+      "icon": "whatsapp",
+      "isWhatsApp": true
+    }
+  },
+  "contact": {
+    "email": "shuaibiqbaldgk@gmail.com",
+    "phone_1": {
+      "href": "tel:+923457134603",
+      "display": "(+92) 345 7134603"
+    },
+    "phone_2": {
+      "href": "tel:+923017184603",
+      "display": "(+92) 301 7184603"
+    },
+    "location": "Lahore, Punjab, Pakistan"
+  },
+  "resume": "assets/docs/resume/Shuaib_Iqbal_CV.pdf"
+}

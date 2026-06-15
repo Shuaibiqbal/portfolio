@@ -1,0 +1,24 @@
+/* ═══════════════════════════════════════════════════════════════
+   projects.css  —  Legacy project grid classes only.
+   Shared card styles live in certifications.css.
+   ═══════════════════════════════════════════════════════════════ */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: var(--navy-card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.project-card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-4px);
+}

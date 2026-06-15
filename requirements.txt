@@ -1,0 +1,25 @@
+# ──────────────────────────────────────────────────────────────
+# Portfolio Frontend — Local Development
+# Pure static site (HTML + CSS + JS). No packages required
+# to run — just Python's built-in server.
+# ──────────────────────────────────────────────────────────────
+#
+# OPTION 1 — Built-in server (no pip install needed):
+#
+#   Windows:       python  -m http.server 8000
+#   Mac / Linux:   python3 -m http.server 8000
+#   Open:          http://localhost:8000
+#
+# OPTION 2 — Live reload (browser auto-refreshes on save):
+#
+#   pip install livereload
+#   python run_dev.py        ← Windows
+#   python3 run_dev.py       ← Mac / Linux
+#   Open:  http://localhost:8000
+#
+# ──────────────────────────────────────────────────────────────
+# NOTE: This file is in .gitignore — not pushed to GitHub Pages.
+# GitHub Pages is a static host; Python is only needed locally.
+# ──────────────────────────────────────────────────────────────
+
+livereload

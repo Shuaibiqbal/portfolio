@@ -1,0 +1,116 @@
+{
+  "title": "My",
+  "titleAccent": "Education",
+  "subtitle": "Academic foundation in Computer Engineering, Artificial Intelligence, and Systems Design — built across two research-intensive degree programmes.",
+  "items": [
+    {
+      "id": "ms_nust",
+      "degree": "MS Computer Engineering",
+      "school": "NUST — Islamabad",
+      "year": "2018 – 2021",
+      "gpa": "CGPA: 3.50 / 4.00",
+      "desc": "Focused on Machine Learning, Pattern Recognition, Image Processing, and Digital Signal Processing. Thesis: designed and trained an Encoder-Decoder CNN-LSTM model to predict residential energy consumption, achieving state-of-the-art accuracy on real-world datasets.",
+      "focusLabel": "Focus Areas",
+      "focus": [
+        "Machine Learning",
+        "Pattern Recognition",
+        "Image Processing",
+        "DSP",
+        "CNN-LSTM",
+        "Energy Forecasting"
+      ],
+      "image": "assets/images/education/MS Degree Transcript.jpg",
+      "placeholder": "🎓",
+      "buttons": [
+        {
+          "label": "Download Degree",
+          "href": "assets/docs/education/MS Degree Certificate.pdf",
+          "type": "download"
+        },
+        {
+          "label": "Download Transcript",
+          "href": "assets/docs/education/MS Degree Transcript.pdf",
+          "type": "download"
+        }
+      ]
+    },
+    {
+      "id": "bs_iub",
+      "degree": "B.Sc. Computer Systems Engineering",
+      "school": "IUB — Bahawalpur",
+      "year": "2014 – 2018",
+      "gpa": "CGPA: 3.62 / 4.00",
+      "desc": "Strong foundation in AI, Robotics, Image Processing, Data Mining, and Probability Theory. Thesis: developed and simulated bio-inspired swarm algorithms for autonomous pattern formation in multi-robot systems.",
+      "focusLabel": "Focus Areas",
+      "focus": [
+        "AI & Robotics",
+        "Image Processing",
+        "Data Mining",
+        "Probability",
+        "Swarm Robotics"
+      ],
+      "image": "assets/images/education/BS Degree Transcript.jpg",
+      "placeholder": "🎓",
+      "buttons": [
+        {
+          "label": "Download Degree",
+          "href": "assets/docs/education/BS Degree Certificate.pdf",
+          "type": "download"
+        },
+        {
+          "label": "Download Transcript",
+          "href": "assets/docs/education/BS Degree Transcript.pdf",
+          "type": "download"
+        }
+      ]
+    },
+    {
+      "id": "fsc",
+      "degree": "Intermediate (Pre-Engineering)",
+      "school": "B.I.S.E — D.G Khan",
+      "year": "2012 – 2014",
+      "gpa": "870 / 1100",
+      "desc": "Pre-Engineering programme with distinction, covering Mathematics, Physics, Chemistry, and English at Govt. Post Graduate College D.G. Khan.",
+      "focusLabel": "Subjects",
+      "focus": [
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "English"
+      ],
+      "image": "assets/images/education/F.SC Certificate.jpg",
+      "placeholder": "🎓",
+      "buttons": [
+        {
+          "label": "Download Certificate",
+          "href": "assets/docs/education/F.SC Certificate.pdf",
+          "type": "download"
+        }
+      ]
+    },
+    {
+      "id": "matric",
+      "degree": "Matriculation (Science Group)",
+      "school": "B.I.S.E — D.G Khan",
+      "year": "2010 – 2012",
+      "gpa": "930 / 1050",
+      "desc": "Science group matriculation with distinction in Mathematics and the Sciences at Suffah Public High School, D.G. Khan.",
+      "focusLabel": "Subjects",
+      "focus": [
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Biology"
+      ],
+      "image": "assets/images/education/Matric Certificate.jpg",
+      "placeholder": "🎓",
+      "buttons": [
+        {
+          "label": "Download Certificate",
+          "href": "assets/docs/education/Matric Certificate.pdf",
+          "type": "download"
+        }
+      ]
+    }
+  ]
+}

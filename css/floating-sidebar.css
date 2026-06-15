@@ -1,0 +1,166 @@
+/* ═══════════════════════════════════════════════════════════════
+   floating-sidebar.css
+   Desktop: vertical nav bar in the right side-gutter.
+   Mobile:  hidden; only WhatsApp button shown bottom-left.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── DESKTOP FLOATING NAV BAR ────────────────────────────────── */
+.fn-bar {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px 5px;
+  background: rgba(11, 15, 20, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 28px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  animation: fn-fadein 0.6s ease 0.8s forwards;
+}
+
+@keyframes fn-fadein {
+  to { opacity: 1; }
+}
+
+/* ── EACH NAV BUTTON ─────────────────────────────────────────── */
+.fn-btn {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.fn-btn svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+/* filled icons (LinkedIn, GitHub, WhatsApp svgs use fill) */
+.fn-btn svg.fn-fill {
+  stroke: none;
+  fill: currentColor;
+}
+
+.fn-btn:hover,
+.fn-btn.active {
+  background: rgba(0, 180, 216, 0.12);
+  border-color: rgba(0, 180, 216, 0.4);
+  color: var(--cyan);
+  transform: scale(1.12);
+}
+
+/* ── TOOLTIP (left side) ─────────────────────────────────────── */
+.fn-btn::after {
+  content: attr(data-label);
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 4px 10px;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  transform: translateY(-50%) translateX(4px);
+  letter-spacing: 0.3px;
+}
+
+.fn-btn:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* ── DIVIDER between nav and socials ─────────────────────────── */
+.fn-divider {
+  width: 24px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 2px auto;
+  flex-shrink: 0;
+}
+
+/* ── ONLY on screens wide enough to have side gutter ────────── */
+@media (max-width: 1299px) {
+  .fn-bar { display: none; }
+}
+
+/* ── WHATSAPP FLOATING BUTTON ────────────────────────────────── */
+.wa-btn {
+  position: fixed;
+  bottom: calc(28px + env(safe-area-inset-bottom, 0px));
+  right: 88px;
+  z-index: 8000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.45);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: wa-pulse 3s ease-in-out infinite;
+}
+
+.wa-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 32px rgba(37, 211, 102, 0.65);
+  animation: none;
+}
+
+.wa-btn svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+  flex-shrink: 0;
+}
+
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 4px 24px rgba(37,211,102,0.45); }
+  50%       { box-shadow: 0 4px 36px rgba(37,211,102,0.7); }
+}
+
+/* Mobile: right side, same level as chat button */
+@media (max-width: 768px) {
+  .wa-btn {
+    bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+    right: 86px;
+    left: auto;
+    width: 44px;
+    height: 44px;
+  }
+  .wa-btn svg { width: 21px; height: 21px; }
+}

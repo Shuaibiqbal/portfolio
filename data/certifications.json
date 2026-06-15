@@ -1,0 +1,232 @@
+{
+  "title": "My",
+  "titleAccent": "Certifications",
+  "subtitle": "Continuous professional development across Python, AI/ML, data science, cloud, and DevOps — verified by leading industry platforms.",
+  "items": [
+    {
+      "id": "python_basics_coursera",
+      "title": "Python Basics",
+      "issuer": "Coursera",
+      "provider": "University of Michigan",
+      "date": "Nov 2020",
+      "placeholder": "🐍",
+      "image": "assets/images/certs/python_basics_coursera.jpg",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/CVLTBX3YM5Y6",
+      "desc": "Foundational Python programming course covering core language features including data types, conditionals, loops, functions, and file I/O.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "Python Syntax",
+        "Variables & Data Types",
+        "Loops & Conditionals",
+        "Functions",
+        "File I/O",
+        "Error Handling"
+      ]
+    },
+    {
+      "id": "programming_everybody_coursera",
+      "title": "Programming for Everybody (Getting Started with Python)",
+      "issuer": "Coursera",
+      "provider": "University of Michigan",
+      "date": "Nov 2020",
+      "placeholder": "🖥️",
+      "image": "assets/images/certs/programming_everybody_coursera.jpg",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/7CX7K2XJ43EZ",
+      "desc": "Introductory programming course by Dr. Chuck covering Python fundamentals and computational thinking for beginners.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "Python Fundamentals",
+        "Computational Thinking",
+        "Data Structures",
+        "Algorithms Basics",
+        "Problem Solving"
+      ]
+    },
+    {
+      "id": "intro_ai_ibm",
+      "title": "Introduction to Artificial Intelligence (AI)",
+      "issuer": "Coursera",
+      "provider": "IBM",
+      "date": "Nov 2020",
+      "placeholder": "🤖",
+      "image": "assets/images/certs/intro_ai_ibm.jpg",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/NEUZVZ4NM5NC",
+      "desc": "IBM-authorized course covering AI concepts, machine learning, deep learning, neural networks, and real-world AI applications.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "AI Concepts",
+        "Machine Learning",
+        "Deep Learning",
+        "Neural Networks",
+        "Natural Language Processing",
+        "Computer Vision",
+        "AI Ethics"
+      ]
+    },
+    {
+      "id": "python_ds_dataquest",
+      "title": "Python for Data Science: Fundamentals Part I",
+      "issuer": "Dataquest",
+      "provider": "Dataquest.io",
+      "date": "Jan 2022",
+      "placeholder": "📊",
+      "image": "assets/images/certs/python_ds_dataquest.jpg",
+      "link": "https://app.dataquest.io/view_cert/WU33I5CLEOJB0ZUY1Q9F",
+      "desc": "Hands-on data science course covering Python for data analysis, manipulation, and exploration using real-world datasets.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "Python for Data Science",
+        "Data Cleaning",
+        "Data Exploration",
+        "NumPy",
+        "Pandas Basics",
+        "Jupyter Notebooks"
+      ]
+    },
+    {
+      "id": "plotly_coursera",
+      "title": "Data Visualization using Plotly",
+      "issuer": "Coursera",
+      "provider": "Coursera",
+      "date": "May 2022",
+      "placeholder": "📉",
+      "image": "assets/images/certs/plotly_coursera.jpg",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/SPPGPB2DYWNA",
+      "desc": "Project-based course on building interactive and publication-quality data visualizations using Plotly in Python.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "Plotly",
+        "Interactive Charts",
+        "Bar / Line / Scatter Plots",
+        "Choropleth Maps",
+        "Dash Basics",
+        "Data Storytelling"
+      ]
+    },
+    {
+      "id": "pandas_kaggle",
+      "title": "Data Analysis with Pandas",
+      "issuer": "Kaggle",
+      "provider": "Kaggle",
+      "date": "Jun 2022",
+      "placeholder": "🐼",
+      "image": "assets/images/certs/pandas_kaggle.png",
+      "link": "https://drive.google.com/file/d/1gnkjpzGThm7J9UDn0svEoDGn5jS6rvAo/view",
+      "desc": "Comprehensive Pandas course covering data manipulation, aggregation, merging, and reshaping for data analysis workflows.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "Pandas",
+        "DataFrame Operations",
+        "GroupBy & Aggregation",
+        "Merge & Join",
+        "Indexing & Selection",
+        "Data Wrangling"
+      ]
+    },
+    {
+      "id": "python_libs_skillup",
+      "title": "Python Libraries for Data Science",
+      "issuer": "SkillUp by Simplilearn",
+      "provider": "SkillUp Online",
+      "date": "Dec 2022",
+      "placeholder": "📦",
+      "image": "assets/images/certs/python_libs_skillup.png",
+      "link": "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxNzUyIiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzk4ODcyNV8xNjcwMzI0OTc4LnBuZyIsInVzZXJuYW1lIjoiU2h1YWliIElxYmFsIn0%3D",
+      "desc": "End-to-end coverage of the Python data science ecosystem including NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "Scikit-learn",
+        "Data Preprocessing",
+        "Feature Engineering"
+      ]
+    },
+    {
+      "id": "python_hackerrank_1",
+      "title": "Python (Basic) — Certificate of Accomplishment",
+      "issuer": "HackerRank",
+      "provider": "HackerRank",
+      "date": "Aug 2023",
+      "placeholder": "💻",
+      "image": "assets/images/certs/python_hackerrank.png",
+      "link": "https://www.hackerrank.com/certificates/fba3fe13b25c",
+      "desc": "Skill certification test validating Python programming competency including data structures, OOP, and problem-solving skills.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "Python OOP",
+        "Data Structures",
+        "List Comprehensions",
+        "Lambda Functions",
+        "Exception Handling",
+        "Coding Challenges"
+      ]
+    },
+    {
+      "id": "docker_udemy",
+      "title": "Docker for the Absolute Beginner — Hands On — DevOps",
+      "issuer": "Udemy",
+      "provider": "KodeKloud",
+      "date": "Aug 2022",
+      "placeholder": "🐳",
+      "image": "assets/images/certs/docker_udemy.jpg",
+      "link": "https://www.udemy.com/certificate/UC-7b947a80-01fd-41d9-a0fb-98eb4805b752/",
+      "desc": "Hands-on Docker course covering containerization fundamentals, Docker Compose, networking, volumes, and DevOps deployment workflows.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "Docker",
+        "Containerization",
+        "Docker Compose",
+        "Networking",
+        "Volumes",
+        "Dockerfile",
+        "DevOps",
+        "Image Management"
+      ]
+    },
+    {
+      "id": "llm_huggingface",
+      "title": "Fundamentals of LLMs — The LLM Course",
+      "issuer": "Hugging Face",
+      "provider": "Hugging Face",
+      "date": "Jun 2025",
+      "placeholder": "🧠",
+      "image": "assets/images/certs/llm_huggingface.png",
+      "link": "https://drive.google.com/file/d/1FaVVK5tpqBg8fCe_2ofGH7qji0rIfhA4/view",
+      "desc": "Deep dive into large language model architecture, training, fine-tuning, RLHF, quantization, and deployment using Hugging Face tools.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "LLM Architecture",
+        "Transformers",
+        "Fine-Tuning",
+        "RLHF",
+        "Quantization",
+        "Hugging Face",
+        "Prompt Engineering",
+        "Model Deployment"
+      ]
+    },
+    {
+      "id": "chatgpt_datacamp",
+      "title": "Introduction to ChatGPT",
+      "issuer": "DataCamp",
+      "provider": "DataCamp",
+      "date": "Feb 2026",
+      "placeholder": "💬",
+      "image": "assets/images/certs/chatgpt_datacamp.jpg",
+      "link": "https://www.datacamp.com/statement-of-accomplishment/course/7ce6916f43d33919cf45f1a81a649f668ec83d0c?raw=1",
+      "desc": "Practical course on using ChatGPT effectively for productivity, prompt engineering, code generation, and real-world AI-assisted workflows.",
+      "skillsLabel": "Skills Learned",
+      "skills": [
+        "ChatGPT",
+        "Prompt Engineering",
+        "AI-Assisted Coding",
+        "Content Generation",
+        "Workflow Automation",
+        "Generative AI"
+      ]
+    }
+  ]
+}

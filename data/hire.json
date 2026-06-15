@@ -1,0 +1,255 @@
+{
+  "title": "Let's Work",
+  "titleAccent": "Together",
+  "subtitle": "Tell me about your project or opportunity — I respond to every genuine enquiry within 24 hours.",
+  "types": [
+    {
+      "id": "project",
+      "label": "Short-term Project"
+    },
+    {
+      "id": "permanent",
+      "label": "Permanent Position"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "USD",
+      "label": "USD — US Dollar"
+    },
+    {
+      "code": "PKR",
+      "label": "PKR — Pakistani Rupee"
+    },
+    {
+      "code": "EUR",
+      "label": "EUR — Euro"
+    },
+    {
+      "code": "GBP",
+      "label": "GBP — British Pound"
+    },
+    {
+      "code": "AED",
+      "label": "AED — UAE Dirham"
+    },
+    {
+      "code": "SAR",
+      "label": "SAR — Saudi Riyal"
+    },
+    {
+      "code": "CAD",
+      "label": "CAD — Canadian Dollar"
+    },
+    {
+      "code": "AUD",
+      "label": "AUD — Australian Dollar"
+    },
+    {
+      "code": "INR",
+      "label": "INR — Indian Rupee"
+    },
+    {
+      "code": "SGD",
+      "label": "SGD — Singapore Dollar"
+    },
+    {
+      "code": "MYR",
+      "label": "MYR — Malaysian Ringgit"
+    },
+    {
+      "code": "BDT",
+      "label": "BDT — Bangladeshi Taka"
+    },
+    {
+      "code": "JPY",
+      "label": "JPY — Japanese Yen"
+    },
+    {
+      "code": "CHF",
+      "label": "CHF — Swiss Franc"
+    },
+    {
+      "code": "CNY",
+      "label": "CNY — Chinese Yuan"
+    },
+    {
+      "code": "NZD",
+      "label": "NZD — New Zealand Dollar"
+    },
+    {
+      "code": "QAR",
+      "label": "QAR — Qatari Riyal"
+    },
+    {
+      "code": "KWD",
+      "label": "KWD — Kuwaiti Dinar"
+    },
+    {
+      "code": "OMR",
+      "label": "OMR — Omani Rial"
+    },
+    {
+      "code": "TRY",
+      "label": "TRY — Turkish Lira"
+    }
+  ],
+  "project": {
+    "submitLabel": "Send Project Enquiry",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true,
+        "half": true
+      },
+      {
+        "id": "email",
+        "label": "Your Email",
+        "type": "email",
+        "required": true,
+        "half": true
+      },
+      {
+        "id": "projectTitle",
+        "label": "Project Title",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "description",
+        "label": "Project Description",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "What do you need built? Include context and goals."
+      },
+      {
+        "id": "currency",
+        "label": "Currency",
+        "type": "currency",
+        "required": true,
+        "half": true
+      },
+      {
+        "id": "budget",
+        "label": "Budget",
+        "type": "text",
+        "required": true,
+        "half": true,
+        "placeholder": "e.g. 500 – 1000"
+      },
+      {
+        "id": "timeline",
+        "label": "Timeline",
+        "type": "text",
+        "required": true,
+        "placeholder": "e.g. 2 weeks"
+      },
+      {
+        "id": "requirements",
+        "label": "Technical Requirements",
+        "type": "textarea",
+        "required": false,
+        "placeholder": "Optional — specific tech stack, APIs, or constraints."
+      },
+      {
+        "id": "docLink",
+        "label": "Requirements Document Link (optional)",
+        "type": "url",
+        "required": false,
+        "placeholder": "Paste Google Drive, Dropbox, or OneDrive link",
+        "hint": "⚠️ Before sharing, make sure the link permission is set to <strong>\"Anyone with the link can view\"</strong> — otherwise the document won't be accessible."
+      }
+    ]
+  },
+  "permanent": {
+    "submitLabel": "Send Opportunity",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Your Full Name",
+        "type": "text",
+        "required": true,
+        "half": true
+      },
+      {
+        "id": "email",
+        "label": "Your Email",
+        "type": "email",
+        "required": true,
+        "half": true
+      },
+      {
+        "id": "company",
+        "label": "Company Name",
+        "type": "text",
+        "required": true,
+        "half": true
+      },
+      {
+        "id": "position",
+        "label": "Position Title",
+        "type": "text",
+        "required": true,
+        "half": true
+      },
+      {
+        "id": "workType",
+        "label": "Work Type",
+        "type": "select",
+        "required": true,
+        "half": true,
+        "options": [
+          "Remote",
+          "On-site",
+          "Hybrid"
+        ]
+      },
+      {
+        "id": "location",
+        "label": "Location",
+        "type": "text",
+        "required": true,
+        "half": true,
+        "placeholder": "e.g. Lahore / Remote"
+      },
+      {
+        "id": "currency",
+        "label": "Currency",
+        "type": "currency",
+        "required": true,
+        "half": true
+      },
+      {
+        "id": "salary",
+        "label": "Salary Range",
+        "type": "text",
+        "required": true,
+        "half": true,
+        "placeholder": "e.g. 3000 – 5000 / month"
+      },
+      {
+        "id": "startDate",
+        "label": "Start Date",
+        "type": "text",
+        "required": true,
+        "placeholder": "e.g. ASAP or March 2026"
+      },
+      {
+        "id": "description",
+        "label": "Job Description",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "Describe the role, responsibilities, and team."
+      },
+      {
+        "id": "reason",
+        "label": "Why reach out?",
+        "type": "textarea",
+        "required": false,
+        "placeholder": "Optional — what made you reach out specifically?"
+      }
+    ]
+  }
+}

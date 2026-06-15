@@ -1,0 +1,53 @@
+{
+  "title": "About",
+  "titleAccent": "Me",
+  "summary": "AI/ML Engineer with 4+ years of production experience designing and shipping LLM-powered applications, RAG systems, and agentic AI pipelines for enterprise clients across FMCG, IoT, and SaaS. Proficient across the full AI stack — from OpenAI API, Anthropic Claude, and LangChain through to FastAPI backends, Docker deployments, and vector database integration.",
+  "cards": [
+    {
+      "icon": "🤖",
+      "title": "Machine Learning",
+      "desc": "Production-grade ML and DL systems — CNNs, LSTMs, XGBoost, ARIMA, and time-series forecasting — shipped for enterprise clients in FMCG, IoT, and SaaS."
+    },
+    {
+      "icon": "🧠",
+      "title": "LLM & Generative AI",
+      "desc": "End-to-end LLM applications, RAG pipelines, LangChain agents, LangGraph workflows, and multi-agent systems built with OpenAI API and Anthropic Claude."
+    },
+    {
+      "icon": "👁️",
+      "title": "Computer Vision & NLP",
+      "desc": "CNN-based image analysis, OCR pipelines, sentiment analysis, and NLP-powered SQL generation — delivering analytics automation at scale."
+    },
+    {
+      "icon": "⚙️",
+      "title": "Backend & DevOps",
+      "desc": "High-performance FastAPI and Django REST APIs, PostgreSQL, Docker-containerized deployments, and scalable ETL pipelines powering AI products in production."
+    }
+  ],
+  "modal": {
+    "fullSummary": "AI/ML Engineer with 4+ years of production experience designing and shipping LLM-powered applications, RAG systems, and agentic AI pipelines for enterprise clients across FMCG, IoT, and SaaS. Proficient across the full AI stack — from OpenAI API, Anthropic Claude, LangChain, and LangGraph through to FastAPI backends, Docker deployments, and vector database integration. Experienced in multi-agent frameworks, fine-tuning workflows, and building AI-first products end-to-end.",
+    "achievements": [
+      "Built an LLM-powered NL-to-SQL engine querying a 14M-row FMCG dataset, eliminating manual reporting entirely and saving hundreds of analyst-hours per month.",
+      "Architected an AI-first Sales Intelligence Chat platform with multi-turn conversation memory and real-time data rendering, deployed in production for enterprise FMCG clients.",
+      "Reduced out-of-stock events by 20% through time-windowed stockout forecasting and an automated alerting system across multiple distribution networks.",
+      "Delivered RGM AI pipelines for EBM, PMI, RB-PK, and Unilever — directly driving double-digit commercial growth across product categories.",
+      "Boosted HVAC energy forecasting accuracy by 25% using an ARIMA + LSTM + XGBoost ensemble, integrated into a live IoT monitoring platform at Sense Digital."
+    ],
+    "expertise": [
+      { "label": "LLM & Agentic AI",  "skills": "OpenAI API, Anthropic Claude, LangChain, LangGraph, CrewAI, Multi-Agent Systems" },
+      { "label": "RAG & Vector DBs",  "skills": "FAISS, Pinecone, ChromaDB, Semantic Search, Hybrid Retrieval, Embeddings" },
+      { "label": "ML / DL",           "skills": "PyTorch, TensorFlow, Scikit-learn, XGBoost, LSTM, CNN, Time-Series Forecasting" },
+      { "label": "Backend & APIs",    "skills": "FastAPI, Django REST Framework, PostgreSQL, ETL Pipelines, SQLAlchemy" },
+      { "label": "DevOps & Tools",    "skills": "Docker, Git, Linux, Streamlit, Plotly" }
+    ],
+    "experience": [
+      { "role": "Machine Learning Engineer",    "company": "AiSight.ai",    "location": "Lahore",    "period": "Oct 2022 – Present" },
+      { "role": "Associate ML Engineer",        "company": "Sense Digital", "location": "Islamabad", "period": "May – Oct 2022" },
+      { "role": "ML Engineer Intern",           "company": "IVY Interactive","location": "Islamabad", "period": "Feb – Apr 2022" }
+    ],
+    "education": [
+      { "degree": "MS Computer Engineering",           "school": "NUST, Islamabad",   "year": "2018–2021" },
+      { "degree": "B.Sc. Computer Systems Engineering","school": "IUB, Bahawalpur",  "year": "2014–2018" }
+    ]
+  }
+}

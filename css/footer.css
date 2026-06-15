@@ -1,0 +1,40 @@
+/* ═══════════════════════════════════════════════════════════════
+   footer.css
+   ═══════════════════════════════════════════════════════════════ */
+
+.footer {
+  border-top: 1px solid #1e2a38;
+  padding: 30px 0;
+  font-size: 0.88rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-copy { color: #4a5a6a; }
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-links a {
+  color: #4a5a6a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--cyan); }
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}

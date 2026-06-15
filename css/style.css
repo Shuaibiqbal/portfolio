@@ -1,0 +1,22 @@
+/* ── STYLE.CSS — Master Stylesheet ─────────────────────────────
+   Only this file is linked in index.html.
+   <link rel="stylesheet" href="./css/style.css">
+   ──────────────────────────────────────────────────────────────── */
+
+@import url('base.css');
+@import url('navbar.css');
+@import url('hero.css');
+@import url('about.css');
+@import url('experience.css');
+@import url('projects.css');
+@import url('skills.css');
+@import url('education.css');
+@import url('certifications.css');
+@import url('learning.css');
+@import url('ai-assistant.css');
+@import url('contact.css');
+@import url('footer.css');
+@import url('lightbox.css');
+@import url('hire.css');
+@import url('floating-chat.css');
+@import url('floating-sidebar.css');

@@ -1,0 +1,294 @@
+/* ═══════════════════════════════════════════════════════════════
+   hire.css — Hire Me modal form
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── OVERLAY ─────────────────────────────────────────────────── */
+.hire-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 9, 15, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.hire-overlay.open { display: flex; }
+
+/* ── MODAL ───────────────────────────────────────────────────── */
+.hire-modal {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 660px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 40px 44px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.hire-close {
+  position: absolute;
+  top: 16px; right: 20px;
+  background: none; border: none;
+  color: var(--muted); font-size: 1.3rem;
+  cursor: pointer; line-height: 1;
+  transition: color 0.2s;
+  padding: 4px 8px;
+}
+.hire-close:hover { color: var(--cyan); }
+
+.hire-modal-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: var(--white);
+}
+
+.hire-modal-subtitle {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* ── TABS ────────────────────────────────────────────────────── */
+.hire-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hire-tab {
+  padding: 10px 22px;
+  border: none;
+  background: none;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s, border-color 0.2s;
+  letter-spacing: 0.3px;
+}
+
+.hire-tab:hover         { color: var(--white); }
+.hire-tab.active        { color: var(--cyan); border-bottom-color: var(--cyan); }
+
+/* ── PANELS ──────────────────────────────────────────────────── */
+.hire-panel             { display: none; }
+.hire-panel.active      { display: block; }
+
+/* ── FORM FIELDS ─────────────────────────────────────────────── */
+.hire-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.hire-field { margin-bottom: 18px; }
+
+.hire-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.hire-label .req { color: var(--cyan); }
+
+.hire-input,
+.hire-textarea,
+.hire-select {
+  width: 100%;
+  background: var(--navy-dark);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 0.9rem;
+  font-family: inherit;
+  padding: 11px 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.hire-input::placeholder,
+.hire-textarea::placeholder,
+.hire-input[type="url"]::placeholder { color: var(--text-dim); opacity: 0.7; }
+
+.hire-input:focus,
+.hire-textarea:focus,
+.hire-select:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.1);
+}
+
+.hire-textarea {
+  resize: vertical;
+  min-height: 96px;
+  line-height: 1.6;
+}
+
+.hire-select {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a9ab0' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+.hire-select option { background: var(--navy-card); color: var(--white); }
+
+/* ── FIELD HINT ──────────────────────────────────────────────── */
+.hire-hint {
+  margin-top: 7px;
+  padding: 9px 12px;
+  background: rgba(251, 191, 36, 0.06);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  border-radius: 7px;
+  font-size: 0.78rem;
+  color: #fbbf24;
+  line-height: 1.6;
+}
+
+.hire-hint strong {
+  color: #fde68a;
+  font-weight: 700;
+}
+
+/* ── FILE UPLOAD ─────────────────────────────────────────────── */
+.hire-file-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hire-file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hire-file-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 18px;
+  background: rgba(0, 180, 216, 0.08);
+  border: 1.5px solid rgba(0, 180, 216, 0.45);
+  border-radius: 8px;
+  color: var(--cyan);
+  font-size: 0.84rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.hire-file-btn:hover {
+  background: rgba(0, 180, 216, 0.15);
+  border-color: var(--cyan);
+  transform: translateY(-1px);
+}
+
+.hire-file-btn svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  fill: none;
+  flex-shrink: 0;
+}
+
+.hire-file-name {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  font-style: italic;
+}
+
+.hire-file-name.has-file {
+  color: #4ade80;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* ── ERROR ───────────────────────────────────────────────────── */
+.hire-error {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  margin-bottom: 16px;
+  display: none;
+}
+.hire-error.show { display: block; }
+
+/* ── SUBMIT BUTTON ───────────────────────────────────────────── */
+.hire-submit {
+  width: 100%;
+  margin-top: 6px;
+  background: var(--cyan);
+  color: var(--navy);
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 14px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.hire-submit:hover:not(:disabled) {
+  background: var(--cyan-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 180, 216, 0.35);
+}
+.hire-submit:disabled { opacity: 0.55; cursor: not-allowed; }
+
+/* ── SUCCESS ─────────────────────────────────────────────────── */
+.hire-success {
+  text-align: center;
+  padding: 32px 0 8px;
+  animation: fadeIn 0.4s ease;
+}
+.hire-success-icon  { font-size: 3.2rem; margin-bottom: 14px; }
+.hire-success h3    { font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+.hire-success p     { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .hire-modal   { padding: 28px 20px; max-height: 95vh; }
+  .hire-row     { grid-template-columns: 1fr; }
+  .hire-modal-title { font-size: 1.35rem; }
+  .hire-tabs    { overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+  .hire-tabs::-webkit-scrollbar { display: none; }
+  .hire-tab     { padding: 10px 14px; font-size: 0.82rem; white-space: nowrap; flex-shrink: 0; }
+}

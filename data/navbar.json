@@ -1,0 +1,16 @@
+{
+  "logo": "Shuaib",
+  "links": [
+    { "label": "Home",           "href": "#home" },
+    { "label": "About",          "href": "#about" },
+    { "label": "Experience",     "href": "#experience" },
+    { "label": "Projects",       "href": "#projects" },
+    { "label": "Skills",         "href": "#skills" },
+    { "label": "Education",      "href": "#education" },
+    { "label": "Certifications", "href": "#certifications" },
+    { "label": "Learning",       "href": "#learning" },
+    { "label": "Blog",           "href": "#blog" },
+    { "label": "AI Assistant",   "href": "#ai-assistant", "isAi": true },
+    { "label": "Contact",        "href": "#contact" }
+  ]
+}

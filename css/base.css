@@ -1,0 +1,116 @@
+/* ── BASE — Variables · Reset · Layout · Shared Styles ─────────
+   THEME: Change CSS variables here only. Everything updates site-wide.
+   ──────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Backgrounds */
+  --navy:       #0b0f14;   /* page background          */
+  --navy-dark:  #121820;   /* dark section background  */
+  --navy-card:  #1a212b;   /* card / modal background  */
+  --border:     #2d3744;   /* border color             */
+
+  /* Accent */
+  --cyan:       #00b4d8;   /* primary accent           */
+  --cyan-hover: #0096c7;   /* accent hover state       */
+
+  /* Text */
+  --white:      #ffffff;   /* headings, strong text    */
+  --muted:      #b0bec5;   /* body / description text  */
+  --text-dim:   #8a9ab0;   /* secondary / card text    */
+}
+
+/* ── RESET ──────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--navy);
+  color: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── LAYOUT ─────────────────────────────────────────────────── */
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ── SHARED SECTION STYLES ──────────────────────────────────── */
+
+.section      { padding: 80px 0; }
+.section.dark { background: var(--navy-dark); }
+
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.accent { color: var(--cyan); }
+
+.section-desc {
+  color: var(--muted);
+  margin: 0 0 10px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+/* ── SCROLL ANIMATIONS ──────────────────────────────────────── */
+
+.anim-fade-up {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.anim-fade-up.anim-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .section-title { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 48px 0; }
+
+  .section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .section-desc {
+    font-size: 0.9rem;
+    padding: 0 10px;
+    line-height: 1.7;
+  }
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up { opacity: 1; transform: none; transition: none; }
+}

@@ -1,0 +1,296 @@
+/* ── HERO ────────────────────────────────────────────────────── */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 620px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    #0b0f14 35%,
+    rgba(11, 15, 20, 0.80) 55%,
+    rgba(11, 15, 20, 0.10) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 60px;
+  max-width: 620px;
+}
+
+.hero-tag {
+  display: inline-block;
+  color: var(--cyan);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.hero-heading {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.12;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.hero-sub {
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  font-weight: 700;
+  color: var(--cyan);
+  line-height: 1.4;
+  margin-bottom: 22px;
+}
+
+.hero-desc {
+  font-size: 0.97rem;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 470px;
+  margin-bottom: 38px;
+}
+
+/* ── BUTTONS ────────────────────────────────────────────────── */
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 34px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  min-width: 160px;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--cyan);
+  color: var(--navy);
+  border: 2px solid var(--cyan);
+}
+
+.btn-primary:hover {
+  background: var(--cyan-hover);
+  border-color: var(--cyan-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-outline:hover { background: rgba(255, 255, 255, 0.08); }
+
+/* ── AI BUTTON ──────────────────────────────────────────────── */
+.btn-ai {
+  background: rgba(0, 180, 216, 0.08);
+  color: var(--cyan);
+  border: 2px solid rgba(0, 180, 216, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-ai:hover {
+  background: rgba(0, 180, 216, 0.18);
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.btn-ai-icon {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  flex-shrink: 0;
+}
+
+/* ── SOCIAL ICONS ───────────────────────────────────────────── */
+
+.hero-socials {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.social-icon:hover {
+  background: var(--cyan);
+  color: var(--navy);
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ── TABLET ─────────────────────────────────────────────────── */
+
+@media (max-width: 900px) and (min-width: 769px) {
+  .hero-content {
+    padding: 0 30px;
+    max-width: 100%;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(11, 15, 20, 0.96) 0%,
+      rgba(11, 15, 20, 0.60) 100%
+    );
+  }
+}
+
+/* ── MOBILE ─────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    height: 100svh; /* excludes browser chrome on iOS Safari */
+    min-height: 420px;
+    align-items: flex-end;
+    padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .hero-bg {
+    background-position: 70% center;
+    background-size: cover;
+    opacity: 1;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(11, 15, 20, 1.0)  0%,
+      rgba(11, 15, 20, 0.97) 35%,
+      rgba(11, 15, 20, 0.72) 60%,
+      rgba(11, 15, 20, 0.15) 100%
+    );
+  }
+
+  .hero-content {
+    padding: 0 22px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .hero-tag { display: none; }
+
+  .hero-sub {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--cyan);
+    line-height: 1.4;
+    margin-bottom: 14px;
+  }
+
+  .hero-desc { display: none; }
+
+  .hero-heading {
+    font-size: 1.55rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Hire Me + Let's Connect — side by side */
+  .hero-buttons a:not(.btn-ai) {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 0;
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  /* Ask AI About Me — full width */
+  .hero-buttons a.btn-ai {
+    flex: 1 1 100%;
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 0.85rem;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  /* Social icons — left-aligned; padding-right clears the two fixed bottom buttons */
+  .hero-socials {
+    justify-content: flex-start;
+    gap: 12px;
+    margin-top: 12px;
+    padding-right: 150px; /* clearance for wa-btn + fc-btn */
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+}

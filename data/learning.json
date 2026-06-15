@@ -1,0 +1,43 @@
+{
+  "title": "Currently",
+  "titleAccent": "Learning",
+  "subtitle": "Actively advancing into next-generation AI architectures and frameworks to stay at the forefront of the field.",
+  "items": [
+    {
+      "icon": "🤖",
+      "category": "Agentic AI",
+      "progress": 70,
+      "title": "Agentic AI & Autonomous Agents",
+      "desc": "Mastering the design of autonomous AI systems capable of tool use, persistent memory, goal decomposition, and self-correction. Implementing production multi-agent workflows with LangGraph, AutoGen, and CrewAI — moving beyond simple chains into genuinely autonomous systems.",
+      "topicsLabel": "Topics",
+      "topics": ["LangGraph", "AutoGen", "CrewAI", "Tool Use", "ReAct Pattern"]
+    },
+    {
+      "icon": "🔗",
+      "category": "RAG / LangChain",
+      "progress": 80,
+      "title": "Advanced RAG & Retrieval Systems",
+      "desc": "Advancing beyond basic RAG into production-grade architectures — hybrid vector and keyword search, cross-encoder re-ranking, multi-hop reasoning, and context compression for systems that demand high answer accuracy and low hallucination rates.",
+      "topicsLabel": "Topics",
+      "topics": ["Hybrid Search", "Re-ranking", "FAISS", "Pinecone", "Multi-hop Reasoning"]
+    },
+    {
+      "icon": "⚡",
+      "category": "Fine-Tuning",
+      "progress": 55,
+      "title": "LLM Fine-Tuning & Optimization",
+      "desc": "Mastering parameter-efficient fine-tuning (LoRA, QLoRA, PEFT) for adapting large language models to domain-specific tasks with minimal compute. Exploring GGUF quantization and efficient local deployment via Ollama and llama.cpp.",
+      "topicsLabel": "Topics",
+      "topics": ["LoRA / QLoRA", "PEFT", "Ollama", "llama.cpp", "Quantization"]
+    },
+    {
+      "icon": "🛠️",
+      "category": "MCP",
+      "progress": 40,
+      "title": "Model Context Protocol (MCP)",
+      "desc": "Implementing Anthropic's Model Context Protocol to build standardised, composable AI tool integrations. Enabling richer agentic workflows by connecting LLMs to live data sources, external APIs, and enterprise systems through a unified interface.",
+      "topicsLabel": "Topics",
+      "topics": ["MCP", "Tool Calling", "Anthropic SDK", "AI APIs", "Context Management"]
+    }
+  ]
+}

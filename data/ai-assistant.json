@@ -1,0 +1,19 @@
+{
+  "badge": "Powered by RAG + LangChain + OpenAI",
+  "title": "Ask My",
+  "titleAccent": "AI Assistant",
+  "subtitle": "An AI assistant trained on Shuaib's complete profile — experience, projects, skills, and achievements. Ask anything and get precise, grounded answers in seconds.",
+  "welcomeMessage": "Hi! I'm Shuaib's AI assistant, powered by RAG. I have full context on his work experience, skills, projects, and background. What would you like to know?",
+  "inputPlaceholder": "Ask anything about Shuaib…",
+  "disclaimer": "Responses are grounded in Shuaib's profile data. Questions outside this scope are politely declined.",
+  "suggestions": [
+    { "label": "Who is Shuaib?",       "q": "Tell me about Shuaib" },
+    { "label": "Top Skills",           "q": "What are his top technical skills?" },
+    { "label": "AI/ML Experience",     "q": "Summarize his AI and ML engineering experience" },
+    { "label": "AI Projects",          "q": "What AI projects has he built?" },
+    { "label": "Why hire him?",        "q": "Why should we hire Shuaib?" },
+    { "label": "LangChain & RAG",      "q": "Does he have experience with LangChain and RAG pipelines?" },
+    { "label": "Backend & APIs",       "q": "Describe his backend and API development experience" },
+    { "label": "Tech Stack",           "q": "What is his complete technology stack?" }
+  ]
+}

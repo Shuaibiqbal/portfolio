@@ -1,0 +1,15 @@
+[
+  { "id": "navbar"         },
+  { "id": "hero"           },
+  { "id": "about"          },
+  { "id": "experience"     },
+  { "id": "projects"       },
+  { "id": "skills"         },
+  { "id": "education"      },
+  { "id": "certifications" },
+  { "id": "learning"       },
+  { "id": "blog"           },
+  { "id": "ai-assistant"   },
+  { "id": "contact"        },
+  { "id": "footer"         }
+]

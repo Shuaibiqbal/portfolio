@@ -1,0 +1,29 @@
+{
+  "title": "My",
+  "titleAccent": "Blog",
+  "subtitle": "Practical articles on AI engineering, LLM systems, and production ML — written from real project experience.",
+  "items": [
+    {
+      "id": "blog_rag_langchain",
+      "title": "Building Production RAG Pipelines with LangChain",
+      "date": "Jan 2026",
+      "platform": "Medium",
+      "link": "https://medium.com/@shuaibiqbal",
+      "tags": ["RAG", "LangChain", "LLM", "FAISS"],
+      "excerpt": "A deep-dive into architecting production-grade RAG systems — covering chunking strategies, embedding selection, FAISS vs. Pinecone trade-offs, re-ranking, and the specific patterns that took a client system from 60% to 91% answer accuracy.",
+      "readTime": "8 min read",
+      "image": ""
+    },
+    {
+      "id": "blog_agentic_ai",
+      "title": "Agentic AI: From Simple Chains to Autonomous Agents",
+      "date": "Dec 2025",
+      "platform": "Medium",
+      "link": "https://medium.com/@shuaibiqbal",
+      "tags": ["Agentic AI", "LangGraph", "AutoGen"],
+      "excerpt": "A practitioner's guide to crossing the gap between basic LLM chains and production autonomous agents — covering ReAct, tool selection, memory architectures, failure modes, and lessons from real deployments using LangGraph and AutoGen.",
+      "readTime": "10 min read",
+      "image": ""
+    }
+  ]
+}

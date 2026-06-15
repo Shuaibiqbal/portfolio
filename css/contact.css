@@ -1,0 +1,110 @@
+/* ═══════════════════════════════════════════════════════════════
+   contact.css
+   ═══════════════════════════════════════════════════════════════ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 40px;
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.contact-value {
+  color: #d0dae6;
+  text-decoration: none;
+  font-size: 0.97rem;
+  transition: color 0.2s;
+}
+
+.contact-value:hover { color: var(--cyan); }
+
+.contact-resume {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+/* ── WHATSAPP BUTTONS ─────────────────────────────────────────── */
+.contact-wa-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-wa-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #25d366;
+  margin-bottom: 2px;
+}
+
+.contact-wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(37, 211, 102, 0.1);
+  border: 1.5px solid rgba(37, 211, 102, 0.4);
+  color: #25d366;
+  padding: 11px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  width: fit-content;
+}
+
+.contact-wa-btn:hover {
+  background: rgba(37, 211, 102, 0.18);
+  border-color: #25d366;
+  transform: translateY(-2px);
+}
+
+.contact-wa-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: #25d366;
+  flex-shrink: 0;
+}
+
+.contact-wa-num {
+  font-size: 0.82rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-resume { flex-direction: column; }
+  .contact-resume .btn { text-align: center; }
+}

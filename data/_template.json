@@ -1,0 +1,12 @@
+{
+  "title": "Section",
+  "titleAccent": "Title",
+  "subtitle": "Short description shown below the heading.",
+  "items": [
+    {
+      "badge": "Badge Text",
+      "title": "Item Title",
+      "desc": "Item description goes here."
+    }
+  ]
+}

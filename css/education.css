@@ -1,0 +1,26 @@
+/* ═══════════════════════════════════════════════════════════════
+   education.css  —  Legacy edu grid classes only.
+   Shared card styles live in certifications.css.
+   ═══════════════════════════════════════════════════════════════ */
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.edu-card {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 30px 28px;
+  display: flex;
+  gap: 18px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.edu-card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-4px);
+}

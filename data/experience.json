@@ -1,0 +1,71 @@
+{
+  "title": "Work",
+  "titleAccent": "Experience",
+  "subtitle": "4+ years of production experience building and deploying AI/ML systems across FMCG, IoT, and SaaS industries.",
+  "items": [
+    {
+      "id": "exp_aisight",
+      "company": "AiSight.ai",
+      "location": "Lahore",
+      "period": "Oct 2022 – Present",
+      "role": "Machine Learning Engineer",
+      "desc": "Architecting and shipping AI-driven Revenue Growth Management solutions for Pakistan's leading FMCG brands — EBM, PMI, RB-PK, and Unilever. Built an LLM-powered NL-to-SQL engine querying 14M+ rows, a RAG-based Sales Intelligence Chat platform with multi-turn memory, and stockout forecasting pipelines that reduced out-of-stock events by 20%. Delivered containerized ML workflows via FastAPI and Django, integrated into client SaaS platforms.",
+      "stackLabel": "Tech Stack",
+      "stack": ["Python", "LangChain", "OpenAI API", "FastAPI", "Django", "PostgreSQL", "Docker", "NLP", "ETL", "SQL"],
+      "image": "assets/images/companies/aisight.png",
+      "placeholder": "🤖",
+      "links": [
+        { "label": "Company Site", "href": "https://www.aisight.ai/",                        "type": "external" },
+        { "label": "LinkedIn",     "href": "https://www.linkedin.com/company/aisight1/",     "type": "linkedin" }
+      ]
+    },
+    {
+      "id": "exp_sense",
+      "company": "Sense Digital",
+      "location": "Islamabad",
+      "period": "May 2022 – Oct 2022",
+      "role": "Associate Machine Learning Engineer",
+      "desc": "Boosted HVAC energy forecasting accuracy by 25% through an ARIMA + LSTM + XGBoost ensemble, deployed into a live IoT monitoring platform. Engineered anomaly detection pipelines that flagged equipment failures in real time, and built Streamlit dashboards surfacing ML insights to non-technical facility managers.",
+      "stackLabel": "Tech Stack",
+      "stack": ["ARIMA", "LSTM", "XGBoost", "IoT", "Anomaly Detection", "Streamlit", "Plotly", "REST API", "Time-Series"],
+      "image": "assets/images/companies/sense.png",
+      "placeholder": "📡",
+      "links": [
+        { "label": "Company Site", "href": "https://www.sensedigital.com/",                       "type": "external" },
+        { "label": "LinkedIn",     "href": "https://www.linkedin.com/company/sensedigital/",     "type": "linkedin" }
+      ]
+    },
+    {
+      "id": "exp_ivy",
+      "company": "IVY Interactive",
+      "location": "Islamabad",
+      "period": "Feb 2022 – Apr 2022",
+      "role": "ML Engineer — Internship",
+      "desc": "Delivered multi-model sales forecasting using Prophet, LSTM, and XGBoost alongside RFM customer segmentation for a retail analytics platform. Engineered interactive BI dashboards and automated backend reporting services, significantly reducing manual analysis overhead for the client team.",
+      "stackLabel": "Tech Stack",
+      "stack": ["Prophet", "LSTM", "XGBoost", "RFM Segmentation", "MAE / RMSE", "SQL", "BI Dashboards"],
+      "image": "assets/images/companies/ivy.png",
+      "placeholder": "📈",
+      "links": [
+        { "label": "Company Site", "href": "https://ivyinteractive.co/",                                         "type": "external" },
+        { "label": "LinkedIn",     "href": "https://www.linkedin.com/company/ivy-interactive-solutions-ltd/",   "type": "linkedin" }
+      ]
+    },
+    {
+      "id": "exp_eclat",
+      "company": "Eclat College for Girls",
+      "location": "Rawalpindi",
+      "period": "Nov 2018 – May 2019",
+      "role": "Lecturer — Computer Science",
+      "desc": "Taught Programming Fundamentals, Data Structures, and Software Engineering to undergraduate students. Designed practical coursework and mentored final-year capstone projects, guiding students through end-to-end software development cycles from problem analysis to deployment.",
+      "stackLabel": "Subjects Taught",
+      "stack": ["Programming Fundamentals", "Data Structures", "Software Engineering", "Project Mentorship"],
+      "image": "assets/images/companies/eclat.png",
+      "placeholder": "🏫",
+      "links": [
+        { "label": "Facebook", "href": "https://www.facebook.com/p/Eclat-College-For-Girls-100071080175813/", "type": "external" },
+        { "label": "Visit",    "href": "https://www.facebook.com/p/Eclat-College-For-Girls-100071080175813/", "type": "external" }
+      ]
+    }
+  ]
+}

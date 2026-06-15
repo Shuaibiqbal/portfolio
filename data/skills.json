@@ -1,0 +1,39 @@
+{
+  "title": "My",
+  "titleAccent": "Skills",
+  "subtitle": "A full-stack AI/ML competency — from research and model development through to production deployment and monitoring.",
+  "categories": [
+    {
+      "icon": "🤖",
+      "badge": "LLMs & Gen AI",
+      "title": "LLMs & Generative AI",
+      "desc": "Designing and shipping LLM-powered applications from the ground up — RAG systems, tool-calling agents, and multi-agent workflows deployed and maintained in production environments.",
+      "skillsLabel": "Skills",
+      "skills": ["LangChain", "LangGraph", "OpenAI API", "Anthropic Claude", "HuggingFace", "Transformers", "RAG Pipelines", "Prompt Engineering", "Embeddings", "FAISS", "Pinecone"]
+    },
+    {
+      "icon": "🧠",
+      "badge": "ML & Deep Learning",
+      "title": "Machine Learning & Deep Learning",
+      "desc": "Building and deploying production-grade ML and DL pipelines — from classical ensembles and statistical models to deep learning architectures and time-series forecasting for enterprise clients.",
+      "skillsLabel": "Skills",
+      "skills": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "XGBoost", "ARIMA", "Prophet", "LSTM", "CNN", "NLP", "Anomaly Detection", "Time-Series Forecasting"]
+    },
+    {
+      "icon": "⚙️",
+      "badge": "Backend & DevOps",
+      "title": "Backend & DevOps",
+      "desc": "Engineering high-performance REST APIs, containerised deployments, and automated ETL pipelines that reliably power AI applications in production at scale.",
+      "skillsLabel": "Skills",
+      "skills": ["FastAPI", "Django", "Django REST Framework", "PostgreSQL", "SQLAlchemy", "Docker", "ETL Pipelines", "SQL", "Git", "Linux"]
+    },
+    {
+      "icon": "📊",
+      "badge": "Tools & Visualization",
+      "title": "Tools & Visualization",
+      "desc": "Transforming raw data into actionable insights through interactive dashboards, reproducible ML workflows, and scientific computing — from exploratory analysis to client-facing reporting.",
+      "skillsLabel": "Skills",
+      "skills": ["Streamlit", "Plotly", "Pandas", "NumPy", "SciPy", "Jupyter", "Google Colab", "VS Code"]
+    }
+  ]
+}

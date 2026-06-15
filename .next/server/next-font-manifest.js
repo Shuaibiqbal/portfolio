@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/home/shuaib/development/MyPortfolio /old_portfolio/portfolio/app/layout\":[\"static/media/e4af272ccee01ff0-s.p.woff2\",\"static/media/558ca1a6aa3cb55e-s.p.woff2\",\"static/media/8a1d8947e5852e30-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

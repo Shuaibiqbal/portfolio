@@ -46,7 +46,7 @@
       "desc": "Fully offline AI chatbot for e-commerce — zero cloud dependency, zero API cost. LLaMA 3 runs locally via Ollama with LangChain for context-aware Q&A. Supports both general knowledge queries and business-specific contextual answers from your own product/policy data. Ideal for private deployments.",
       "stackLabel": "Tech Stack",
       "stack": ["LLaMA 3", "Ollama", "LangChain", "Flask", "Offline LLM", "Python"],
-      "image": "",
+      "image": "assets/images/projects/Ecommerce AI chatbot interface showcase.png",
       "placeholder": "🛒",
       "github": "https://github.com/shuaibiqbal/ecommerce-ai-chatbot-llama3",
       "demo": ""

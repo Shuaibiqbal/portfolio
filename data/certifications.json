@@ -24,6 +24,26 @@
       ]
     },
     {
+  "id": "ai_fluency_anthropic",
+  "title": "AI Fluency: Framework & Foundations",
+  "issuer": "Skilljar",
+  "provider": "Anthropic Education",
+  "date": "Jun 2026",
+  "placeholder": "🤖",
+  "image": "assets/images/certs/ai_fluency_anthropic.jpg",
+  "link": "https://www.skilljar.com/",
+  "desc": "Completed Anthropic's AI Fluency course covering the 4 Ds framework — Delegation, Description, Discernment, and Diligence — for working with AI effectively, efficiently, ethically, and safely.",
+  "skillsLabel": "Skills Learned",
+  "skills": [
+    "AI Fluency Framework",
+    "Delegation",
+    "Description & Prompting",
+    "Discernment",
+    "Diligence & Ethics",
+    "Responsible AI Use"
+  ]
+},
+    {
       "id": "programming_everybody_coursera",
       "title": "Programming for Everybody (Getting Started with Python)",
       "issuer": "Coursera",

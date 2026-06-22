@@ -63,6 +63,26 @@
       ]
     },
     {
+  "id": "claude_101_anthropic",
+  "title": "Claude 101",
+  "issuer": "Skilljar",
+  "provider": "Anthropic Education",
+  "date": "Jun 2026",
+  "placeholder": "🧠",
+  "image": "assets/images/certs/claude_101_anthropic.jpg",
+  "link": "https://verify.skilljar.com/c/8eugznjesusi",
+  "desc": "Completed Anthropic's Claude 101 course covering Claude's core capabilities, effective prompting strategies, artifacts, projects, connectors, research mode, and responsible AI use.",
+  "skillsLabel": "Skills Learned",
+  "skills": [
+    "Claude Features & Capabilities",
+    "Prompt Engineering",
+    "Artifacts & Projects",
+    "Enterprise Connectors",
+    "Research Mode",
+    "Responsible AI Use"
+  ]
+},
+    {
       "id": "intro_ai_ibm",
       "title": "Introduction to Artificial Intelligence (AI)",
       "issuer": "Coursera",

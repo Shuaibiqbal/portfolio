@@ -19,6 +19,7 @@
         "CNN-LSTM",
         "Energy Forecasting"
       ],
+      "Thesis": "Pattern Formation of Swarm Robots",
       "image": "assets/images/education/Graduate image.png",
       
       "placeholder": "🎓",
@@ -50,6 +51,7 @@
         "Probability",
         "Swarm Robotics"
       ],
+      "Thesis": "An Efficient Approach Towards Predicting Residential Energy Consumption Via Encoder-Decoder CNN-LSTM",
       "image": "assets/images/education/Graduate image.png",
       "placeholder": "🎓",
       "buttons": [

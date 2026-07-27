@@ -1,0 +1,25 @@
+{
+  "title": "Publication",
+  "titleAccent": "Title",
+  "subtitle": "Short description shown below the heading.",
+  "items": [
+    {
+      "badge": "IEEE · Feb 8, 2022",
+      "title": "Forecasting Stock Market Using Machine Learning Approach Encoder-Decoder ConvLSTM",
+      "desc": "The stock market prediction is a hot topic these days, and predicting the price of a stock is both difficult and important due to the numerous variables at play. There were numerous Machine Learning models submitted for Stock Market Prediction, but Hybrid Models were successful in making accurate predictions. The goal of this study is to create a hybrid Deep Learning model (Encoder-Decoder ConvLSTM) to anticipate stock market prices. We employed historical stock price data S and P500 (Daily Prices) from Yahoo's financial website and six months dataset of State Bank of Pakistan (Hourly values). Different prediction models have been tested for the S and P500 dataset which is publicly available and after finding out that the proposed model performed well it has been applied to the SBP dataset as well. The effectiveness of the proposed model has been calculated based on the following performance metrics, root means square error (RMSE), mean absolute error (MAE), mean square error (MSE), and mean absolute percentage error (MAPE). When compared to other comparable studies, the experimental findings indicate that the proposed model has the best performance metrics values. As a result, we can infer that our model is appropriate for accurate stock market time series prediction.",
+      "link": "https://ieeexplore.ieee.org/document/9701399"
+    },
+    {
+      "badge": "EAI · Jul 7, 2021",
+      "title": "Time-Series Prediction of Cryptocurrency Market using Machine Learning Techniques",
+      "desc": "In the market of cryptocurrency the Bitcoins are the first currency which has gain the significant importance. To predict the market price and stability of Bitcoin in Crypto-market, a machine learning based time series analysis has been applied. Time-series analysis can predict the future ups and downs in the price of Bitcoin. For this purpose we have used ARIMA, FBProphet, XG Boosting for time series analysis as a machine learning techniques. The parameters on the basis of which we have evaluated these models are Root Mean Square Error (RMSE), Mean Absolute Error (MAE) and R2. We conduct experiments on these three techniques but after conducting time series analysis, ARIMA considered as the best model for forecasting Bitcoin price in the crypto-market with RMSE score of 322.4 and MAE score of 227.3. Additionally, this research can be helpful for investors of crypto-market.",
+      "link": "https://eudl.eu/pdf/10.4108/eai.7-7-2021.170286"
+    },
+    {
+      "badge": "AIP Conference Proceedings · Jan 25, 2023",
+      "title": "Multilevel feedback queue: Efficient scheduling and implementation by using dynamic quantum",
+      "desc": "A multitasking operating system allows many programs to run at the same time. We need to schedule our Central Processing Units (CPUs) efficiently to handle these services. CPU scheduling algorithms come in a score of forms and any strategy has advantages and disadvantages. We implemented a Multi-Level Feedback Queue (MLFQ) algorithm with static time quantum for the first queue, making an efficient scheduling algorithm of MLFQ dynamic time quantum used in the second queue. Other than that, we compared both results and observed which dynamic time quantum delivers the best result. In the first queue, we used the Round Robin (RR) algorithm with less quantum time for processes that have a short burst time. The process that had more burst time than the defined quantum in the first queue was allowed to move into the second queue. Here, we calculated the average burst time of all remaining processes and defined that burst time as a quantum for the second queue after the Shortest Job First (SJF) scheme was applied in this queue. As a result, 70% of the processes in the second queue was received CPU. Other processes moved into the lower queue (the last queue). Hence, this technique prevented the starvation problem for those processes which have large burst times.",
+      "link": "https://pubs.aip.org/aip/acp/article-abstract/2554/1/040004/2868861/Multilevel-feedback-queue-Efficient-scheduling-and?redirectedFrom=fulltext"
+    }
+  ]
+}

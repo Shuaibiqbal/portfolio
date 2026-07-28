@@ -1,7 +1,7 @@
 {
-  "title": "Publication",
-  "titleAccent": "Title",
-  "subtitle": "Short description shown below the heading.",
+  "title": "My",
+  "titleAccent": "Publication",
+  "subtitle": "Across three published papers, I've worked on applying machine learning to time-series forecasting and systems optimization: a hybrid Encoder-Decoder ConvLSTM model for stock market prediction (IEEE, 2022), a comparative time-series approach (ARIMA, FBProphet, XGBoost) for cryptocurrency price forecasting (EAI, 2021), and a dynamic quantum-based multilevel feedback queue scheduling algorithm for OS efficiency (AIP Conference Proceedings, 2023).",
   "items": [
     {
       "badge": "IEEE · Feb 8, 2022",

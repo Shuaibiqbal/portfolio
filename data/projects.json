@@ -16,6 +16,18 @@
       "demo": ""
     },
     {
+      "id": "supportdesk_ai",
+      "title": "SupportDesk AI — Chat And Auto-Triage Any Customer Complaint",
+      "tags": ["Multi-Agent", "OpenAI", "Pydantic"],
+      "desc": "A multi-agent support desk that runs in your terminal. A router decides for every message which agent should handle it: the Concierge chats naturally with streaming replies and conversation memory, while the Triage agent turns a messy complaint into a validated support ticket with customer name, category, urgency and summary. Never invents data, falls back safely to chat when unsure, and logs every routing decision with its reason.",
+      "stackLabel": "Tech Stack",
+      "stack": ["Python", "OpenAI GPT-4o-mini", "Pydantic", "Structured Outputs", "python-dotenv"],
+      "image": "assets/images/projects/supportdesk_ai.png",
+      "placeholder": "🎧",
+      "github": "https://github.com/Shuaibiqbal/SupportDesk-AI-Chat-And-Auto-Triage-Any-Customer-Complaint",
+      "demo": ""
+    },
+    {
       "id": "document_qa_bot",
       "title": "AI-Powered Document Q&A Bot",
       "tags": ["RAG", "LangChain", "FAISS"],

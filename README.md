@@ -1,6 +1,6 @@
 # Shuaib Iqbal — AI/ML Engineer Portfolio
 
-A fully JSON-driven, single-page portfolio with a RAG-powered AI assistant, Hire Me modal, floating navigation sidebar, and WhatsApp integration.
+> **Short description:** A fully JSON-driven, single-page portfolio with a RAG-powered AI assistant, Hire Me modal, floating navigation sidebar, and WhatsApp integration.
 
 **Frontend:** Vanilla JS (ES Modules) + JSON data files — hosted on GitHub Pages  
 **Backend:** FastAPI + LangChain + FAISS + GPT-4o-mini — hosted on Hugging Face Spaces

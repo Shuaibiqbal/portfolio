@@ -40,6 +40,18 @@
       "demo": ""
     },
     {
+  "id": "repairdesk_ai",
+  "title": "RepairDesk AI — Device-Repair Chat And Ticket-Intake Assistant",
+  "tags": ["Multi-Agent", "OpenAI", "Pydantic"],
+  "desc": "A multi-agent front desk for a device-repair shop that runs in your terminal. A router decides for every message which agent should handle it: the Concierge answers general questions with streaming replies and conversation memory, while the Intake agent turns a free-text problem like 'my phone screen is cracked' into a validated repair ticket with customer name, device, urgency and summary. Never invents a customer name, trims old turns to stay under the context limit, handles API errors with one clear line, and logs every routing decision with its reason.",
+  "stackLabel": "Tech Stack",
+  "stack": ["Python", "OpenAI API", "Pydantic", "Structured Outputs", "python-dotenv"],
+  "image": "assets/images/projects/repairdesk_ai.png",
+  "placeholder": "🛠️",
+  "github": "https://github.com/Shuaibiqbal/RepairDesk-Device-Repair-ChatAnd-Ticket-Intake-Assistant",
+  "demo": ""
+},
+    {
       "id": "conversational_chatbot",
       "title": "Conversational AI Chatbot with Memory",
       "tags": ["LangChain", "Memory", "GPT-3.5"],
